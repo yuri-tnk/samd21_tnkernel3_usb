@@ -1,0 +1,1765 @@
+Archive member included to satisfy reference by file (symbol)
+
+c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_sqi.o)
+                              d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o (__gnu_thumb1_case_sqi)
+c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_uqi.o)
+                              d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o (__gnu_thumb1_case_uqi)
+c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_shi.o)
+                              d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o (__gnu_thumb1_case_shi)
+c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_udivsi3.o)
+                              d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o (__aeabi_uidiv)
+c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_divsi3.o)
+                              d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o (__aeabi_idiv)
+c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
+                              c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_udivsi3.o) (__aeabi_idiv0)
+c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memcmp.o)
+                              d:/my_github/samd21_tnkernel3_usb/obj/shell.o (memcmp)
+c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memcpy-stub.o)
+                              d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o (memcpy)
+c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memmove.o)
+                              d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o (memmove)
+c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memset.o)
+                              d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o (memset)
+c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcasecmp.o)
+                              d:/my_github/samd21_tnkernel3_usb/obj/shell.o (strcasecmp)
+c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcat.o)
+                              d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o (strcat)
+c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcpy.o)
+                              d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o (strcpy)
+c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strlen-stub.o)
+                              d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o (strlen)
+c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-ctype_.o)
+                              c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcasecmp.o) (_ctype_)
+
+Discarded input sections
+
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7_asm.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7_asm.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+ .text.tn_reset_idle_task_stack
+                0x00000000       0x18 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+ .text.tn_check_stack
+                0x00000000       0x18 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+ .text.tn_sys_tslice_ticks
+                0x00000000       0x4c d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+ .text.tn_get_sys_ticks
+                0x00000000       0x18 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+ .bss.tn_inside_int_cnt
+                0x00000000        0x4 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+ .text.tn_alloc_get_free_size
+                0x00000000       0x34 d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+ .text.tn_realloc
+                0x00000000       0x7c d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+ .text.tn_dqueue_delete
+                0x00000000       0x58 d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+ .text.tn_dqueue_num_free_entries
+                0x00000000       0x1e d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+ .text.tn_dqueue_is_empty
+                0x00000000       0x24 d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .text.do_check_release_cond.isra.0
+                0x00000000       0x14 d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .text.scan_event_waitqueue
+                0x00000000       0x50 d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .text.tn_eventflags_create
+                0x00000000       0x40 d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .text.tn_eventflags_delete
+                0x00000000       0x54 d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .text.tn_eventflags_wait
+                0x00000000      0x11c d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .text.tn_eventflags_set
+                0x00000000       0x74 d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .text.tn_eventflags_clear
+                0x00000000       0x40 d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .debug_info    0x00000000      0x9d1 d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .debug_abbrev  0x00000000      0x316 d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .debug_loc     0x00000000      0x8ef d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .debug_aranges
+                0x00000000       0x50 d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .debug_ranges  0x00000000       0xd8 d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .debug_line    0x00000000      0x53a d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .debug_str     0x00000000      0x47f d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .comment       0x00000000       0x4e d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .debug_frame   0x00000000       0xdc d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .ARM.attributes
+                0x00000000       0x2c d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .text.tn_mailbox_create
+                0x00000000       0xb8 d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .text.tn_mailbox_delete
+                0x00000000       0x58 d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .text.tn_mailbox_receive
+                0x00000000      0x14c d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .text.tn_mailbox_send_ex
+                0x00000000      0x160 d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .text.tn_mailbox_num_free_entries
+                0x00000000       0x1e d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .text.tn_mailbox_is_empty
+                0x00000000       0x24 d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .debug_info    0x00000000     0x107f d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .debug_abbrev  0x00000000      0x332 d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .debug_loc     0x00000000     0x1093 d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .debug_aranges
+                0x00000000       0x48 d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .debug_ranges  0x00000000      0x128 d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .debug_line    0x00000000      0x762 d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .debug_str     0x00000000      0x567 d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .comment       0x00000000       0x4e d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .debug_frame   0x00000000       0xc0 d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .ARM.attributes
+                0x00000000       0x2c d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .text.do_release
+                0x00000000       0x4c d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .text.tn_fmem_create
+                0x00000000       0xa4 d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .text.tn_fmem_delete
+                0x00000000       0x5c d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .text.tn_fmem_get
+                0x00000000       0xbc d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .text.tn_fmem_release
+                0x00000000       0x78 d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .debug_info    0x00000000      0xa4d d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .debug_abbrev  0x00000000      0x300 d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .debug_loc     0x00000000      0xb6c d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .debug_aranges
+                0x00000000       0x40 d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .debug_ranges  0x00000000       0xd0 d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .debug_line    0x00000000      0x5c2 d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .debug_str     0x00000000      0x459 d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .comment       0x00000000       0x4e d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .debug_frame   0x00000000       0xac d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .ARM.attributes
+                0x00000000       0x2c d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_mutex.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_mutex.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_mutex.o
+ .debug_info    0x00000000       0x4f d:/my_github/samd21_tnkernel3_usb/obj/tn_mutex.o
+ .debug_abbrev  0x00000000       0x26 d:/my_github/samd21_tnkernel3_usb/obj/tn_mutex.o
+ .debug_aranges
+                0x00000000       0x18 d:/my_github/samd21_tnkernel3_usb/obj/tn_mutex.o
+ .debug_line    0x00000000       0x1d d:/my_github/samd21_tnkernel3_usb/obj/tn_mutex.o
+ .debug_str     0x00000000      0x136 d:/my_github/samd21_tnkernel3_usb/obj/tn_mutex.o
+ .comment       0x00000000       0x4e d:/my_github/samd21_tnkernel3_usb/obj/tn_mutex.o
+ .ARM.attributes
+                0x00000000       0x32 d:/my_github/samd21_tnkernel3_usb/obj/tn_mutex.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+ .text.tn_sem_delete
+                0x00000000       0x50 d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+ .text.tn_update_wait_queue
+                0x00000000       0x18 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+ .text.tn_update_ready_queue
+                0x00000000       0x50 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+ .text.tn_update_priority
+                0x00000000       0x60 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+ .text.tn_release_wait_que
+                0x00000000       0x3a d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .text.do_task_suspend
+                0x00000000       0x32 d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .text.tn_task_delete
+                0x00000000       0xb0 d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .text.tn_task_suspend
+                0x00000000       0x78 d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .text.tn_task_resume
+                0x00000000       0xac d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .text.tn_task_activate
+                0x00000000       0x88 d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .text.tn_task_change_priority
+                0x00000000       0x64 d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_timer.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_timer.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_timer.o
+ .debug_info    0x00000000       0x4f d:/my_github/samd21_tnkernel3_usb/obj/tn_timer.o
+ .debug_abbrev  0x00000000       0x26 d:/my_github/samd21_tnkernel3_usb/obj/tn_timer.o
+ .debug_aranges
+                0x00000000       0x18 d:/my_github/samd21_tnkernel3_usb/obj/tn_timer.o
+ .debug_line    0x00000000       0x1d d:/my_github/samd21_tnkernel3_usb/obj/tn_timer.o
+ .debug_str     0x00000000      0x136 d:/my_github/samd21_tnkernel3_usb/obj/tn_timer.o
+ .comment       0x00000000       0x4e d:/my_github/samd21_tnkernel3_usb/obj/tn_timer.o
+ .ARM.attributes
+                0x00000000       0x32 d:/my_github/samd21_tnkernel3_usb/obj/tn_timer.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+ .text.queue_add_head
+                0x00000000        0xc d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+ .text.queue_remove_tail
+                0x00000000       0x14 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+ .text.queue_contains_entry
+                0x00000000       0x16 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .text.cdcdf_acm_deinit
+                0x00000000       0x1c d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .text.cdcdf_acm_stop_xfer
+                0x00000000       0x18 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .text.cdcdf_acm_get_line_coding
+                0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .text.cdcdf_acm_get_version
+                0x00000000        0x4 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text.usbdc_unregister_handler
+                0x00000000       0x28 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text.usbdc_deinit
+                0x00000000        0xa d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text.usbdc_unregister_function
+                0x00000000       0x14 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text.usbdc_validate_desces
+                0x00000000       0x40 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text.usbdc_check_desces
+                0x00000000        0xa d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text.usbdc_stop
+                0x00000000       0x14 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text.usbdc_detach
+                0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text.usbdc_remotewakeup
+                0x00000000       0x14 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text.usbdc_get_version
+                0x00000000        0x4 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+ .text.atomic_get_version
+                0x00000000        0x4 d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text.usb_d_deinit
+                0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text.usb_d_disable
+                0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text.usb_d_detach
+                0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text.usb_d_get_speed
+                0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text.usb_d_get_frame_num
+                0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text.usb_d_get_uframe_num
+                0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text.usb_d_send_remotewakeup
+                0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text.usb_d_ep_disable
+                0x00000000       0x24 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text.usb_d_ep_get_req
+                0x00000000       0x20 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text.usb_d_ep_abort
+                0x00000000       0x28 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text.usb_d_ep_get_status
+                0x00000000       0x50 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text.usb_d_get_version
+                0x00000000        0x4 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .rodata.CSWTCH.40
+                0x00000000        0x7 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/utils_assert.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/utils_assert.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/utils_assert.o
+ .text.assert   0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/utils_assert.o
+ .debug_info    0x00000000       0xdc d:/my_github/samd21_tnkernel3_usb/obj/utils_assert.o
+ .debug_abbrev  0x00000000       0x67 d:/my_github/samd21_tnkernel3_usb/obj/utils_assert.o
+ .debug_aranges
+                0x00000000       0x20 d:/my_github/samd21_tnkernel3_usb/obj/utils_assert.o
+ .debug_ranges  0x00000000       0x10 d:/my_github/samd21_tnkernel3_usb/obj/utils_assert.o
+ .debug_line    0x00000000       0x8c d:/my_github/samd21_tnkernel3_usb/obj/utils_assert.o
+ .debug_str     0x00000000      0x1aa d:/my_github/samd21_tnkernel3_usb/obj/utils_assert.o
+ .comment       0x00000000       0x4e d:/my_github/samd21_tnkernel3_usb/obj/utils_assert.o
+ .debug_frame   0x00000000       0x20 d:/my_github/samd21_tnkernel3_usb/obj/utils_assert.o
+ .ARM.attributes
+                0x00000000       0x2c d:/my_github/samd21_tnkernel3_usb/obj/utils_assert.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .text.event_subscribe
+                0x00000000       0x5c d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .text.event_unsubscribe
+                0x00000000       0x5c d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .text.event_post
+                0x00000000       0x44 d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .bss.events    0x00000000        0x4 d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .bss.subscribed
+                0x00000000        0x1 d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .debug_info    0x00000000      0x4b4 d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .debug_abbrev  0x00000000      0x1e3 d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .debug_loc     0x00000000      0x336 d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .debug_aranges
+                0x00000000       0x30 d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .debug_ranges  0x00000000       0x38 d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .debug_line    0x00000000      0x389 d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .debug_str     0x00000000      0x2da d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .comment       0x00000000       0x4e d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .debug_frame   0x00000000       0x78 d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .ARM.attributes
+                0x00000000       0x2c d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .text.is_list_element
+                0x00000000       0x10 d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .text.list_insert_as_head
+                0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .text.list_insert_after
+                0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .text.list_remove_head
+                0x00000000        0xe d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .text.list_delete_element
+                0x00000000       0x26 d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+ .text.ringbuffer_flush
+                0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_disable
+                0x00000000       0x48 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_deinit
+                0x00000000       0x34 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_detach
+                0x00000000       0x10 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_send_remotewakeup
+                0x00000000       0x2c d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_get_speed
+                0x00000000       0x20 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_get_address
+                0x00000000       0x10 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_get_frame_n
+                0x00000000       0x10 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_get_uframe_n
+                0x00000000       0x10 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_ep0_init
+                0x00000000        0xe d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_ep_disable
+                0x00000000       0x34 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_ep_abort
+                0x00000000       0x1e d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_ep_get_status
+                0x00000000       0x8c d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+ .text.usb_find_iface_after
+                0x00000000       0x24 d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+ .text.usb_find_othspdcfg_desc
+                0x00000000       0x38 d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .text.bsp_dma_uart0_get_rx_count
+                0x00000000       0x14 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/bsp_hw.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/bsp_hw.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/bsp_hw.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+ .text.uart_puts
+                0x00000000       0x20 d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+ .text.uart_read_byte
+                0x00000000       0x20 d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .text.is_usb_uart_active
+                0x00000000       0x14 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .text.uart_usb_tx_char
+                0x00000000       0x10 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .text.get_usb_recv_buffer
+                0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .text.get_usb_send_buffer
+                0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .bss.g_usb_recv_buffer
+                0x00000000       0x40 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .bss.g_usb_send_buffer
+                0x00000000       0x40 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .text.sh_stop_cmd_exec
+                0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .text.sh_putchar
+                0x00000000        0x8 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+ .text._exit    0x00000000        0x2 d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+ .text          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+ .data          0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+ .bss           0x00000000        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_sqi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_sqi.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_uqi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_uqi.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_shi.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_shi.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_udivsi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_udivsi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_divsi3.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_divsi3.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memcmp.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memcmp.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memcmp.o)
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memcpy-stub.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memcpy-stub.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memcpy-stub.o)
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memmove.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memmove.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memmove.o)
+ .text.memmove  0x00000000       0xac c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memmove.o)
+ .debug_frame   0x00000000       0x30 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memmove.o)
+ .ARM.attributes
+                0x00000000       0x2c c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memmove.o)
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memset.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memset.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memset.o)
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcasecmp.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcasecmp.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcasecmp.o)
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcat.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcat.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcat.o)
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcpy.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcpy.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcpy.o)
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strlen-stub.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strlen-stub.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strlen-stub.o)
+ .text          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-ctype_.o)
+ .data          0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-ctype_.o)
+ .bss           0x00000000        0x0 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-ctype_.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x00000000         0x00040000         xr
+ram              0x20000000         0x00008000         xrw
+*default*        0x00000000         0xffffffff
+
+Linker script and memory map
+
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7_asm.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/tn_event.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/tn_mailbox.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/tn_mem.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/tn_mutex.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/tn_timer.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/utils_assert.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/utils_event.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/bsp_hw.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/main.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+LOAD d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+START GROUP
+LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a
+LOAD c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a
+END GROUP
+                0x00040000                __top_flash = (ORIGIN (flash) + LENGTH (flash))
+                0x20008000                __top_ram = (ORIGIN (ram) + LENGTH (ram))
+
+.text           0x00000000     0x4bc4
+ FILL mask 0xff
+ *(.vectors)
+ .vectors       0x00000000       0xa8 d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+                0x00000000                vectors
+ *(.text*)
+ .text          0x000000a8      0x13c d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7_asm.o
+                0x000000a8                tn_start_exe
+                0x000000ea                PendSV_Handler
+                0x00000136                tn_task_exit_asm
+                0x00000174                tn_switch_context
+                0x0000017c                tn_int_exit
+                0x00000184                tn_cpu_save_sr
+                0x0000018c                tn_cpu_restore_sr
+                0x00000192                tn_chk_irq_disabled
+                0x00000198                ffs_asm
+                0x0000019a                tn_func_to_ul_1
+                0x0000019c                tn_func_to_ul_2
+                0x0000019e                tn_void_to_ul
+                0x000001a0                tn_arm_disable_interrupts
+                0x000001a4                tn_arm_enable_interrupts
+                0x000001a8                tn_inside_int
+                0x000001b8                do_delay
+ .text.tn_stack_init
+                0x000001e4       0xb4 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+                0x000001e4                tn_stack_init
+ .text.tn_int_stack_init
+                0x00000298        0x2 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+                0x00000298                tn_int_stack_init
+ *fill*         0x0000029a        0x2 ff
+ .text.tn_idle_task_func
+                0x0000029c       0x18 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x0000029c                tn_idle_task_func
+ .text.tn_start_system
+                0x000002b4       0xec d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x000002b4                tn_start_system
+ .text.tn_tick_int_processing
+                0x000003a0       0x8c d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x000003a0                tn_tick_int_processing
+ .text.do_deallocate
+                0x0000042c      0x114 d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+ .text.do_allocate
+                0x00000540       0x68 d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+ .text.tn_alloc_init
+                0x000005a8       0x40 d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+                0x000005a8                tn_alloc_init
+ .text.tn_alloc
+                0x000005e8       0x40 d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+                0x000005e8                tn_alloc
+ .text.tn_dealloc
+                0x00000628       0x48 d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+                0x00000628                tn_dealloc
+ .text.tn_dqueue_create
+                0x00000670       0xa4 d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+                0x00000670                tn_dqueue_create
+ .text.do_input_sem
+                0x00000714       0x36 d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+                0x00000714                do_input_sem
+ .text.do_output_sem
+                0x0000074a       0x3c d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+                0x0000074a                do_output_sem
+ *fill*         0x00000786        0x2 ff
+ .text.tn_dqueue_receive
+                0x00000788      0x120 d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+                0x00000788                tn_dqueue_receive
+ .text.tn_dqueue_send_ex
+                0x000008a8      0x130 d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+                0x000008a8                tn_dqueue_send_ex
+ .text.tn_sem_create
+                0x000009d8       0x44 d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+                0x000009d8                tn_sem_create
+ .text.do_sem_signal
+                0x00000a1c       0x42 d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+                0x00000a1c                do_sem_signal
+ *fill*         0x00000a5e        0x2 ff
+ .text.tn_sem_signal
+                0x00000a60       0x64 d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+                0x00000a60                tn_sem_signal
+ .text.do_sem_acquire
+                0x00000ac4       0x22 d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+                0x00000ac4                do_sem_acquire
+ *fill*         0x00000ae6        0x2 ff
+ .text.tn_sem_acquire
+                0x00000ae8       0x88 d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+                0x00000ae8                tn_sem_acquire
+ .text.find_next_task_to_run
+                0x00000b70       0x3c d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+                0x00000b70                find_next_task_to_run
+ .text.task_to_non_runnable
+                0x00000bac       0x54 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+                0x00000bac                task_to_non_runnable
+ .text.task_to_runnable
+                0x00000c00       0x44 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+                0x00000c00                task_to_runnable
+ .text.delete_task_resources
+                0x00000c44        0x2 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+                0x00000c44                delete_task_resources
+ *fill*         0x00000c46        0x2 ff
+ .text.tn_os_timer_start
+                0x00000c48       0x48 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+                0x00000c48                tn_os_timer_start
+ .text.task_curr_to_wait_action
+                0x00000c90       0x48 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+                0x00000c90                task_curr_to_wait_action
+ .text.tn_os_timer_cancel
+                0x00000cd8       0x26 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+                0x00000cd8                tn_os_timer_cancel
+ .text.task_wait_complete
+                0x00000cfe       0x2c d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+                0x00000cfe                task_wait_complete
+ .text.task_set_dormant_state
+                0x00000d2a       0x2a d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+                0x00000d2a                task_set_dormant_state
+ .text.tn_os_timers_tick_proc
+                0x00000d54       0xb4 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+                0x00000d54                tn_os_timers_tick_proc
+ .text.tn_task_create
+                0x00000e08      0x10c d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+                0x00000e08                tn_task_create
+ .text.tn_task_exit
+                0x00000f14       0x5c d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+                0x00000f14                tn_task_exit
+ .text.tn_task_sleep
+                0x00000f70       0x44 d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+                0x00000f70                tn_task_sleep
+ .text.queue_reset
+                0x00000fb4        0x6 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+                0x00000fb4                queue_reset
+ .text.is_queue_empty
+                0x00000fba       0x14 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+                0x00000fba                is_queue_empty
+ .text.queue_insert_by_priority
+                0x00000fce       0x32 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+                0x00000fce                queue_insert_by_priority
+ .text.queue_add_tail
+                0x00001000        0xc d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+                0x00001000                queue_add_tail
+ .text.queue_remove_head
+                0x0000100c       0x18 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+                0x0000100c                queue_remove_head
+ .text.queue_remove_entry
+                0x00001024        0x8 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+                0x00001024                queue_remove_entry
+ .text.sll_init
+                0x0000102c        0x8 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+                0x0000102c                sll_init
+ .text.sll_remove_head
+                0x00001034        0xe d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+                0x00001034                sll_remove_head
+ .text.sll_add_tail
+                0x00001042       0x16 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+                0x00001042                sll_add_tail
+ .text.sll_add_head
+                0x00001058        0xe d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+                0x00001058                sll_add_head
+ *fill*         0x00001066        0x2 ff
+ .text.cdcdf_acm_req
+                0x00001068       0xd8 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .text.cdcdf_acm_ctrl
+                0x00001140      0x114 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .text.cdcdf_acm_init
+                0x00001254       0x3c d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+                0x00001254                cdcdf_acm_init
+ .text.cdcdf_acm_read
+                0x00001290       0x24 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+                0x00001290                cdcdf_acm_read
+ .text.cdcdf_acm_write
+                0x000012b4       0x24 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+                0x000012b4                cdcdf_acm_write
+ .text.cdcdf_acm_register_callback
+                0x000012d8       0x40 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+                0x000012d8                cdcdf_acm_register_callback
+ .text.cdcdf_acm_is_enabled
+                0x00001318        0xc d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+                0x00001318                cdcdf_acm_is_enabled
+ .text.usbdc_unconfig
+                0x00001324       0x20 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text.usbdc_change_notify
+                0x00001344       0x24 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text.usbdc_request_handler
+                0x00001368       0x3c d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text.usbd_sof_cb
+                0x000013a4       0x1c d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text.usbdc_cb_ctl_done
+                0x000013c0       0x64 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text.usbdc_reset
+                0x00001424       0x44 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+                0x00001424                usbdc_reset
+ .text.usbd_event_cb
+                0x00001468       0x18 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text.usbdc_xfer
+                0x00001480       0x16 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+                0x00001480                usbdc_xfer
+ *fill*         0x00001496        0x2 ff
+ .text.usbdc_cb_ctl_req
+                0x00001498      0x300 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .text.usbdc_register_handler
+                0x00001798       0x28 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+                0x00001798                usbdc_register_handler
+ .text.usbdc_init
+                0x000017c0       0x3c d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+                0x000017c0                usbdc_init
+ .text.usbdc_register_function
+                0x000017fc       0x14 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+                0x000017fc                usbdc_register_function
+ .text.usbdc_start
+                0x00001810       0x30 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+                0x00001810                usbdc_start
+ .text.usbdc_attach
+                0x00001840        0x8 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+                0x00001840                usbdc_attach
+ .text.usbdc_get_ctrl_buffer
+                0x00001848        0xc d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+                0x00001848                usbdc_get_ctrl_buffer
+ .text.usbdc_get_state
+                0x00001854       0x14 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+                0x00001854                usbdc_get_state
+ .text.atomic_enter_critical
+                0x00001868        0xe d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+                0x00001868                atomic_enter_critical
+ .text.atomic_leave_critical
+                0x00001876        0xc d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+                0x00001876                atomic_leave_critical
+ *fill*         0x00001882        0x2 ff
+ .text._usb_d_find_ep
+                0x00001884       0x34 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text.usb_d_dummy_cb_false
+                0x000018b8        0x4 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text.usb_d_cb_trans_more
+                0x000018bc       0x28 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text._usb_d_cb_trans_done
+                0x000018e4       0xec d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text.usb_d_cb_trans_setup
+                0x000019d0       0x70 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .text.usb_d_init
+                0x00001a40       0x60 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+                0x00001a40                usb_d_init
+ .text.usb_d_register_callback
+                0x00001aa0        0x8 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+                0x00001aa0                usb_d_register_callback
+ .text.usb_d_enable
+                0x00001aa8        0x8 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+                0x00001aa8                usb_d_enable
+ .text.usb_d_attach
+                0x00001ab0        0x8 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+                0x00001ab0                usb_d_attach
+ .text.usb_d_set_address
+                0x00001ab8        0x8 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+                0x00001ab8                usb_d_set_address
+ .text.usb_d_ep_init
+                0x00001ac0       0x48 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+                0x00001ac0                usb_d_ep_init
+ .text.usb_d_ep0_init
+                0x00001b08        0xe d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+                0x00001b08                usb_d_ep0_init
+ *fill*         0x00001b16        0x2 ff
+ .text.usb_d_ep_deinit
+                0x00001b18       0x24 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+                0x00001b18                usb_d_ep_deinit
+ .text.usb_d_ep_enable
+                0x00001b3c       0x38 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+                0x00001b3c                usb_d_ep_enable
+ .text.usb_d_ep_transfer
+                0x00001b74       0xe4 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+                0x00001b74                usb_d_ep_transfer
+ .text.usb_d_ep_halt
+                0x00001c58       0x5c d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+                0x00001c58                usb_d_ep_halt
+ .text.usb_d_ep_register_callback
+                0x00001cb4       0x48 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+                0x00001cb4                usb_d_ep_register_callback
+ .text.list_insert_at_end
+                0x00001cfc       0x18 d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+                0x00001cfc                list_insert_at_end
+ .text.ringbuffer_init
+                0x00001d14       0x1e d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+                0x00001d14                ringbuffer_init
+ .text.ringbuffer_get
+                0x00001d32       0x22 d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+                0x00001d32                ringbuffer_get
+ .text.ringbuffer_put
+                0x00001d54       0x22 d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+                0x00001d54                ringbuffer_put
+ .text.ringbuffer_num
+                0x00001d76        0x8 d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+                0x00001d76                ringbuffer_num
+ .text._dummy_func_no_return
+                0x00001d7e        0x4 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ *fill*         0x00001d82        0x2 ff
+ .text._usb_d_dev_wait_dfll_rdy
+                0x00001d84       0x24 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_ept
+                0x00001da8       0x1c d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_handle_setup
+                0x00001dc4       0x7c d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_handle_stall
+                0x00001e40       0x2c d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_trans_done
+                0x00001e6c       0x24 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_trans_stop
+                0x00001e90       0x60 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_handle_trfail
+                0x00001ef0       0xe0 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_reset_epts
+                0x00001fd0       0x34 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_in_next
+                0x00002004      0x164 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_out_next
+                0x00002168      0x1b0 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usbd_ep_pcksize_size
+                0x00002318       0x38 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .text._usb_d_dev_handler
+                0x00002350      0x1d8 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+                0x00002350                _usb_d_dev_handler
+ .text._usb_d_dev_init
+                0x00002528       0xb4 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+                0x00002528                _usb_d_dev_init
+ .text._usb_d_dev_enable
+                0x000025dc       0x48 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+                0x000025dc                _usb_d_dev_enable
+ .text._usb_d_dev_attach
+                0x00002624       0x10 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+                0x00002624                _usb_d_dev_attach
+ .text._usb_d_dev_set_address
+                0x00002634       0x10 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+                0x00002634                _usb_d_dev_set_address
+ .text._usb_d_dev_ep_init
+                0x00002644       0xc4 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+                0x00002644                _usb_d_dev_ep_init
+ .text._usb_d_dev_ep_deinit
+                0x00002708       0x70 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+                0x00002708                _usb_d_dev_ep_deinit
+ .text._usb_d_dev_ep_enable
+                0x00002778      0x138 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+                0x00002778                _usb_d_dev_ep_enable
+ .text._usb_d_dev_ep_stall
+                0x000028b0       0xc4 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+                0x000028b0                _usb_d_dev_ep_stall
+ .text._usb_d_dev_ep_read_req
+                0x00002974       0x54 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+                0x00002974                _usb_d_dev_ep_read_req
+ .text._usb_d_dev_ep_trans
+                0x000029c8      0x10c d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+                0x000029c8                _usb_d_dev_ep_trans
+ .text._usb_d_dev_register_callback
+                0x00002ad4       0x24 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+                0x00002ad4                _usb_d_dev_register_callback
+ .text._usb_d_dev_register_ep_callback
+                0x00002af8       0x2c d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+                0x00002af8                _usb_d_dev_register_ep_callback
+ .text.usb_find_desc
+                0x00002b24       0x1a d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+                0x00002b24                usb_find_desc
+ .text.usb_find_ep_desc
+                0x00002b3e       0x1c d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+                0x00002b3e                usb_find_ep_desc
+ .text.usb_find_cfg_desc
+                0x00002b5a       0x38 d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+                0x00002b5a                usb_find_cfg_desc
+ .text.usb_find_str_desc
+                0x00002b92       0x2c d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+                0x00002b92                usb_find_str_desc
+ *fill*         0x00002bbe        0x2 ff
+ .text.bsp_dma_init
+                0x00002bc0       0x50 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+                0x00002bc0                bsp_dma_init
+ .text.bsp_dma_uart0_rx_init
+                0x00002c10       0x9c d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+                0x00002c10                bsp_dma_uart0_rx_init
+ .text.bsp_dma_dummy_init
+                0x00002cac       0x84 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+                0x00002cac                bsp_dma_dummy_init
+ .text.bsp_dma_dummy_start
+                0x00002d30       0x34 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+                0x00002d30                bsp_dma_dummy_start
+ .text.bsp_dma_uart0_tx_init
+                0x00002d64       0xbc d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+                0x00002d64                bsp_dma_uart0_tx_init
+ .text.bsp_dma_uart0_tx_ch_disable
+                0x00002e20       0x3c d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+                0x00002e20                bsp_dma_uart0_tx_ch_disable
+ .text.bsp_dma_uart0_get_btcnt
+                0x00002e5c        0xc d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+                0x00002e5c                bsp_dma_uart0_get_btcnt
+ .text.bsp_dma_interrupt_handler
+                0x00002e68       0x80 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+                0x00002e68                bsp_dma_interrupt_handler
+ .text.clock_init
+                0x00002ee8       0xa8 d:/my_github/samd21_tnkernel3_usb/obj/bsp_hw.o
+                0x00002ee8                clock_init
+ .text.usb_hw_init
+                0x00002f90       0xe0 d:/my_github/samd21_tnkernel3_usb/obj/bsp_hw.o
+                0x00002f90                usb_hw_init
+ .text.dma_eventHandler
+                0x00003070        0xe d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+ *fill*         0x0000307e        0x2 ff
+ .text.bsp_uart0_open
+                0x00003080      0x178 d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+                0x00003080                bsp_uart0_open
+ .text.bsp_uart0_transmit
+                0x000031f8       0x5c d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+                0x000031f8                bsp_uart0_transmit
+ .text.uart0_tx_buf
+                0x00003254       0x5a d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+                0x00003254                uart0_tx_buf
+ .text.uart0_tx_str
+                0x000032ae       0x12 d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+                0x000032ae                uart0_tx_str
+ .text.uart0_tx_char
+                0x000032c0       0x2c d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+                0x000032c0                uart0_tx_char
+ .text.uart0_read
+                0x000032ec       0x98 d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+                0x000032ec                uart0_read
+ .text.usb_device_cb_tx
+                0x00003384       0x10 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .text.usb_device_cb_rx
+                0x00003394       0x38 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .text.usb_device_cb_state_changed
+                0x000033cc       0x40 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .text.get_usb_cdc_uart_info
+                0x0000340c        0x8 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+                0x0000340c                get_usb_cdc_uart_info
+ .text.usb_serial_init
+                0x00003414       0x7c d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+                0x00003414                usb_serial_init
+ .text.usb_uart_active_proc
+                0x00003490       0x2c d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+                0x00003490                usb_uart_active_proc
+ .text.uart_usb_read
+                0x000034bc       0xb8 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+                0x000034bc                uart_usb_read
+ .text.uart_usb_tx_buf
+                0x00003574       0x78 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+                0x00003574                uart_usb_tx_buf
+ .text.uart_usb_tx_str
+                0x000035ec       0x1a d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+                0x000035ec                uart_usb_tx_str
+ *fill*         0x00003606        0x2 ff
+ .text.tn_os_tick_task_func
+                0x00003608       0x40 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                0x00003608                tn_os_tick_task_func
+ .text.task_main_func
+                0x00003648       0x38 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                0x00003648                task_main_func
+ .text.get_uart0_info
+                0x00003680        0x8 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                0x00003680                get_uart0_info
+ .text.tn_app_init
+                0x00003688       0xf0 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                0x00003688                tn_app_init
+ .text.simple_ascii_rx_drv
+                0x00003778       0x40 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                0x00003778                simple_ascii_rx_drv
+ .text.task_uart0_rx_func
+                0x000037b8       0x84 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                0x000037b8                task_uart0_rx_func
+ .text.random_xor32
+                0x0000383c       0x18 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                0x0000383c                random_xor32
+ .text.startup.main
+                0x00003854       0xb4 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                0x00003854                main
+ .text.fill_line_buf
+                0x00003908       0x9c d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                0x00003908                fill_line_buf
+ .text.task_io_func
+                0x000039a4       0x48 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                0x000039a4                task_io_func
+ .text.sh_exec_cmd_psw
+                0x000039ec       0x10 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+                0x000039ec                sh_exec_cmd_psw
+ .text.sh_exec_cmd_ver
+                0x000039fc       0x10 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+                0x000039fc                sh_exec_cmd_ver
+ .text.sh_exec_cmd_1
+                0x00003a0c       0x10 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+                0x00003a0c                sh_exec_cmd_1
+ .text.sh_exec_cmd_2
+                0x00003a1c       0x10 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+                0x00003a1c                sh_exec_cmd_2
+ .text.sh_exec_cmd_3
+                0x00003a2c       0x10 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+                0x00003a2c                sh_exec_cmd_3
+ .text.do_itoa  0x00003a3c       0x6e d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+                0x00003a3c                do_itoa
+ *fill*         0x00003aaa        0x2 ff
+ .text.sh_exec_dump_stk
+                0x00003aac       0xd8 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+                0x00003aac                sh_exec_dump_stk
+ .text.shell_send_hs_line.part.0
+                0x00003b84       0xb4 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .text.sh_init  0x00003c38       0x7c d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+                0x00003c38                sh_init
+ .text.sh_start_cmd_exec
+                0x00003cb4       0x18 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+                0x00003cb4                sh_start_cmd_exec
+ .text.sh_send  0x00003ccc       0x16 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+                0x00003ccc                sh_send
+ *fill*         0x00003ce2        0x2 ff
+ .text.sh_prompt
+                0x00003ce4       0x2c d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+                0x00003ce4                sh_prompt
+ .text.sh_echo  0x00003d10       0x16 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+                0x00003d10                sh_echo
+ *fill*         0x00003d26        0x2 ff
+ .text.sh_input
+                0x00003d28      0x1f0 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+                0x00003d28                sh_input
+ .text.sh_cmd_end
+                0x00003f18       0x16 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+                0x00003f18                sh_cmd_end
+ .text.sh_get_command_line_args
+                0x00003f2e       0x4e d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+                0x00003f2e                sh_get_command_line_args
+ .text.sh_do_cmd_exec
+                0x00003f7c       0x70 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+                0x00003f7c                sh_do_cmd_exec
+ .text.irq_handler_dummy
+                0x00003fec        0x2 d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+                0x00003fec                HardFault_Handler
+                0x00003fec                AC_Handler
+                0x00003fec                NMI_Handler
+                0x00003fec                SERCOM1_Handler
+                0x00003fec                irq_handler_dummy
+                0x00003fec                ADC_Handler
+                0x00003fec                TCC1_Handler
+                0x00003fec                SERCOM2_Handler
+                0x00003fec                TCC0_Handler
+                0x00003fec                RTC_Handler
+                0x00003fec                EIC_Handler
+                0x00003fec                WDT_Handler
+                0x00003fec                TC4_Handler
+                0x00003fec                TC3_Handler
+                0x00003fec                PM_Handler
+                0x00003fec                SERCOM5_Handler
+                0x00003fec                SVC_Handler
+                0x00003fec                TCC2_Handler
+                0x00003fec                EVSYS_Handler
+                0x00003fec                SERCOM3_Handler
+                0x00003fec                SERCOM4_Handler
+                0x00003fec                I2S_Handler
+                0x00003fec                NVMCTRL_Handler
+                0x00003fec                SERCOM0_Handler
+                0x00003fec                DAC_Handler
+                0x00003fec                PTC_Handler
+                0x00003fec                TC5_Handler
+                0x00003fec                SYSCTRL_Handler
+ *fill*         0x00003fee        0x2 ff
+ .text.Reset_Handler
+                0x00003ff0       0xa0 d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+                0x00003ff0                Reset_Handler
+ .text.OutputChar
+                0x00004090       0x20 d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+ .text.OutputField
+                0x000040b0       0x94 d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+ .text.StrPrintfFunc
+                0x00004144       0x28 d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+ .text.vStrPrintf
+                0x0000416c      0x1e0 d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+                0x0000416c                vStrPrintf
+ .text.tn_snprintf
+                0x0000434c       0x16 d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+                0x0000434c                tn_snprintf
+ .text.tn_cpu_int_enable
+                0x00004362        0x2 d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+                0x00004362                tn_cpu_int_enable
+ .text.SysTick_Handler
+                0x00004364        0xc d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+                0x00004364                SysTick_Handler
+ .text.DMAC_Handler
+                0x00004370        0xc d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+                0x00004370                DMAC_Handler
+ .text.USB_Handler
+                0x0000437c        0xc d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+                0x0000437c                USB_Handler
+ .text          0x00004388       0x14 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_sqi.o)
+                0x00004388                __gnu_thumb1_case_sqi
+ .text          0x0000439c       0x14 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_uqi.o)
+                0x0000439c                __gnu_thumb1_case_uqi
+ .text          0x000043b0       0x14 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_shi.o)
+                0x000043b0                __gnu_thumb1_case_shi
+ .text          0x000043c4      0x114 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_udivsi3.o)
+                0x000043c4                __aeabi_uidiv
+                0x000043c4                __udivsi3
+                0x000044d0                __aeabi_uidivmod
+ .text          0x000044d8      0x1d4 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_divsi3.o)
+                0x000044d8                __divsi3
+                0x000044d8                __aeabi_idiv
+                0x000046a4                __aeabi_idivmod
+ .text          0x000046ac        0x4 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
+                0x000046ac                __aeabi_idiv0
+                0x000046ac                __aeabi_ldiv0
+ .text.memcmp   0x000046b0       0x48 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memcmp.o)
+                0x000046b0                memcmp
+ .text.memcpy   0x000046f8       0xa4 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memcpy-stub.o)
+                0x000046f8                memcpy
+ .text.memset   0x0000479c       0xa8 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memset.o)
+                0x0000479c                memset
+ .text.strcasecmp
+                0x00004844       0x44 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcasecmp.o)
+                0x00004844                strcasecmp
+ .text.strcat   0x00004888       0x4c c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcat.o)
+                0x00004888                strcat
+ .text.strcpy   0x000048d4       0x10 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcpy.o)
+                0x000048d4                strcpy
+ .text.strlen   0x000048e4       0x5c c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strlen-stub.o)
+                0x000048e4                strlen
+ *(.rodata)
+ *(.rodata.*)
+ .rodata.CSWTCH.37
+                0x00004940        0x7 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ *fill*         0x00004947        0x1 ff
+ .rodata._usb_ep_cfgs
+                0x00004948       0x24 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .rodata.task_main_func.str1.1
+                0x0000496c        0xf d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .rodata.task_uart0_rx_func.str1.1
+                0x0000497b        0xa d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .rodata.fill_line_buf.str1.1
+                0x00004985       0x17 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .rodata.sh_exec_cmd_psw.str1.1
+                0x0000499c       0x15 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .rodata.sh_exec_cmd_ver.str1.1
+                0x000049b1        0xd d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .rodata.sh_exec_cmd_1.str1.1
+                0x000049be       0x12 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .rodata.sh_exec_cmd_2.str1.1
+                0x000049d0       0x12 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .rodata.sh_exec_cmd_3.str1.1
+                0x000049e2       0x12 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .rodata.sh_exec_dump_stk.str1.1
+                0x000049f4       0x5b d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+                                 0x5e (size before relaxing)
+ .rodata.str1.1
+                0x00004a4f       0x20 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ *fill*         0x00004a6f        0x1 ff
+ .rodata.g_shell_cmd_arr
+                0x00004a70       0x30 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+                0x00004a70                g_shell_cmd_arr
+ .rodata.g_shell_cmd_arr_size
+                0x00004aa0        0x4 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+                0x00004aa0                g_shell_cmd_arr_size
+ .rodata.sh_prompt.str1.1
+                0x00004aa4        0x7 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+                                  0xa (size before relaxing)
+ .rodata.sh_do_cmd_exec.str1.1
+                0x00004aab       0x13 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ *fill*         0x00004abe        0x2 ff
+ .rodata._ctype_
+                0x00004ac0      0x101 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-ctype_.o)
+                0x00004ac0                _ctype_
+                0x00004bc4                . = ALIGN (0x4)
+ *fill*         0x00004bc1        0x3 ff
+
+.glue_7         0x00004bc4        0x0
+ .glue_7        0x00004bc4        0x0 linker stubs
+
+.glue_7t        0x00004bc4        0x0
+ .glue_7t       0x00004bc4        0x0 linker stubs
+
+.vfp11_veneer   0x00004bc4        0x0
+ .vfp11_veneer  0x00004bc4        0x0 linker stubs
+
+.v4_bx          0x00004bc4        0x0
+ .v4_bx         0x00004bc4        0x0 linker stubs
+
+.iplt           0x00004bc4        0x0
+ .iplt          0x00004bc4        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7_asm.o
+
+.rel.dyn        0x00004bc4        0x0
+ .rel.iplt      0x00004bc4        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7_asm.o
+                0x00004bc4                . = ALIGN (0x4)
+                0x00004bc4                _etext = .
+
+.uninit_RESERVED
+ *(.bss.$RESERVED*)
+
+.data           0x20000000       0xbc load address 0x00004bc4
+ FILL mask 0xff
+                0x20000000                _data = .
+ *(.ramfunc .ramfunc.*)
+ *(vtable)
+ *(.data*)
+ .data.tn_func_exit_stack_start
+                0x20000000        0x4 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x20000000                tn_func_exit_stack_start
+ .data.cdcdf_acm_req_h
+                0x20000004        0x8 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .data.g_single_desc
+                0x2000000c        0x8 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .data.single_desc_bytes
+                0x20000014       0xa2 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ *fill*         0x200000b6        0x2 ff
+ .data.seed.0   0x200000b8        0x4 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                0x200000bc                . = ALIGN (0x4)
+                0x200000bc                _edata = .
+
+.igot.plt       0x200000bc        0x0 load address 0x00004c80
+ .igot.plt      0x200000bc        0x0 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7_asm.o
+
+.bss            0x200000c0     0x1c50 load address 0x00004c80
+                0x200000c0                _bss = .
+ *(.bss*)
+ .bss.tn_create_queue
+                0x200000c0        0x8 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x200000c0                tn_create_queue
+ .bss.tn_created_tasks_qty
+                0x200000c8        0x4 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x200000c8                tn_created_tasks_qty
+ .bss.tn_curr_run_task
+                0x200000cc        0x4 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x200000cc                tn_curr_run_task
+ .bss.tn_func_exit_stack
+                0x200000d0      0x200 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x200000d0                tn_func_exit_stack
+ .bss.tn_idle_count
+                0x200002d0        0x4 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x200002d0                tn_idle_count
+ .bss.tn_idle_task
+                0x200002d4       0x60 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x200002d4                tn_idle_task
+ .bss.tn_idle_task_hook_func
+                0x20000334        0x4 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x20000334                tn_idle_task_hook_func
+ .bss.tn_idle_task_stack
+                0x20000338      0x180 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+ .bss.tn_next_task_to_run
+                0x200004b8        0x4 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x200004b8                tn_next_task_to_run
+ .bss.tn_os_timer_list_gen
+                0x200004bc        0x8 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x200004bc                tn_os_timer_list_gen
+ .bss.tn_os_timer_list_tick
+                0x200004c4       0x40 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x200004c4                tn_os_timer_list_tick
+ .bss.tn_ready_list
+                0x20000504      0x100 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x20000504                tn_ready_list
+ .bss.tn_ready_to_run_bmp
+                0x20000604        0x4 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x20000604                tn_ready_to_run_bmp
+ .bss.tn_sp_info
+                0x20000608        0x8 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x20000608                tn_sp_info
+ .bss.tn_sys_tick_count
+                0x20000610        0x4 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x20000610                tn_sys_tick_count
+ .bss.tn_sys_tick_sem
+                0x20000614       0x14 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x20000614                tn_sys_tick_sem
+ .bss.tn_system_state
+                0x20000628        0x4 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x20000628                tn_system_state
+ .bss.tn_tslice_ticks
+                0x2000062c       0x40 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                0x2000062c                tn_tslice_ticks
+ .bss._cdcdf_acm
+                0x2000066c        0xc d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .bss._cdcdf_acm_funcd
+                0x20000678        0x6 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ *fill*         0x2000067e        0x2 
+ .bss.cdcdf_acm_notify_state
+                0x20000680        0x4 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .bss.cdcdf_acm_set_line_coding
+                0x20000684        0x4 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .bss.usbd_cdc_line_coding
+                0x20000688        0x7 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ *fill*         0x2000068f        0x1 
+ .bss.usbdc     0x20000690       0x20 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .bss.usb_d_inst
+                0x200006b0       0x80 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .bss._usb_ep0_cache
+                0x20000730       0x40 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .bss._usb_ep1_cache
+                0x20000770       0x40 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .bss._usb_ep2_cache
+                0x200007b0       0x40 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .bss.dev_inst  0x200007f0       0xc8 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .bss.prvt_inst
+                0x200008b8       0x60 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ *fill*         0x20000918        0x8 
+ .bss._write_back_section
+                0x20000920       0x30 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .bss.descriptor_section
+                0x20000950       0x30 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .bss.dmacChannelObj
+                0x20000980       0x30 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .bss.g_dummy_dst_arr
+                0x200009b0        0x4 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .bss.g_dummy_src_arr
+                0x200009b4        0x4 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .bss.g_usb_cdc_uart_info
+                0x200009b8      0x184 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .bss.g_ascii_drv
+                0x20000b3c       0x24 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                0x20000b3c                g_ascii_drv
+ .bss.g_line_buf
+                0x20000b60       0x80 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                0x20000b60                g_line_buf
+ .bss.g_shell_ds
+                0x20000be0      0x1ac d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .bss.g_uart0_info
+                0x20000d8c       0x48 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ *fill*         0x20000dd4        0x4 
+ .bss.g_uart0_rx_buf
+                0x20000dd8       0x20 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                0x20000dd8                g_uart0_rx_buf
+ .bss.g_uart0_tx_buf
+                0x20000df8       0x40 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                0x20000df8                g_uart0_tx_buf
+ .bss.queueShellEvents
+                0x20000e38       0x30 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                0x20000e38                queueShellEvents
+ .bss.queueShellEventsMem
+                0x20000e68       0x40 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .bss.task_io   0x20000ea8       0x60 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .bss.task_io_stack
+                0x20000f08      0x300 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .bss.task_main
+                0x20001208       0x60 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .bss.task_main_stack
+                0x20001268      0x400 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .bss.task_uart0_rx
+                0x20001668       0x60 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .bss.task_uart0_rx_stack
+                0x200016c8      0x300 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .bss.tn_os_tick_task
+                0x200019c8       0x60 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .bss.tn_os_tick_task_stack
+                0x20001a28      0x200 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .bss.g_shell_hs_mi
+                0x20001c28       0x24 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .bss.g_shell_hs_mi_buf
+                0x20001c4c       0xc0 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .bss.stage.0   0x20001d0c        0x4 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ *(COMMON)
+                0x20001d10                . = ALIGN (0x4)
+                0x20001d10                _ebss = .
+                [!provide]                PROVIDE (_end = .)
+                0x20008000                PROVIDE (_stack_top = (__top_ram - 0x0))
+OUTPUT(d:/my_github/samd21_tnkernel3_usb/obj/rtos_usb_g elf32-littlearm)
+LOAD linker stubs
+
+.ARM.attributes
+                0x00000000       0x28
+ .ARM.attributes
+                0x00000000       0x1c d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7_asm.o
+ .ARM.attributes
+                0x0000001c       0x2c d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+ .ARM.attributes
+                0x00000048       0x2c d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+ .ARM.attributes
+                0x00000074       0x2c d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+ .ARM.attributes
+                0x000000a0       0x2c d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+ .ARM.attributes
+                0x000000cc       0x2c d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+ .ARM.attributes
+                0x000000f8       0x2c d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+ .ARM.attributes
+                0x00000124       0x2c d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .ARM.attributes
+                0x00000150       0x2c d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+ .ARM.attributes
+                0x0000017c       0x2c d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .ARM.attributes
+                0x000001a8       0x2c d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .ARM.attributes
+                0x000001d4       0x2c d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+ .ARM.attributes
+                0x00000200       0x2c d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .ARM.attributes
+                0x0000022c       0x2c d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .ARM.attributes
+                0x00000258       0x2c d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+ .ARM.attributes
+                0x00000284       0x2c d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .ARM.attributes
+                0x000002b0       0x2c d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+ .ARM.attributes
+                0x000002dc       0x2c d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .ARM.attributes
+                0x00000308       0x2c d:/my_github/samd21_tnkernel3_usb/obj/bsp_hw.o
+ .ARM.attributes
+                0x00000334       0x2c d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+ .ARM.attributes
+                0x00000360       0x2c d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .ARM.attributes
+                0x0000038c       0x2c d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .ARM.attributes
+                0x000003b8       0x2c d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .ARM.attributes
+                0x000003e4       0x2c d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .ARM.attributes
+                0x00000410       0x2c d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+ .ARM.attributes
+                0x0000043c       0x2c d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+ .ARM.attributes
+                0x00000468       0x2c d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+ .ARM.attributes
+                0x00000494       0x1e c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_sqi.o)
+ .ARM.attributes
+                0x000004b2       0x1e c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_uqi.o)
+ .ARM.attributes
+                0x000004d0       0x1e c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_thumb1_case_shi.o)
+ .ARM.attributes
+                0x000004ee       0x1e c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_udivsi3.o)
+ .ARM.attributes
+                0x0000050c       0x1e c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_divsi3.o)
+ .ARM.attributes
+                0x0000052a       0x1e c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_dvmd_tls.o)
+ .ARM.attributes
+                0x00000548       0x2c c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memcmp.o)
+ .ARM.attributes
+                0x00000574       0x2c c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memcpy-stub.o)
+ .ARM.attributes
+                0x000005a0       0x2c c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memset.o)
+ .ARM.attributes
+                0x000005cc       0x2c c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcasecmp.o)
+ .ARM.attributes
+                0x000005f8       0x2c c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcat.o)
+ .ARM.attributes
+                0x00000624       0x2c c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcpy.o)
+ .ARM.attributes
+                0x00000650       0x2c c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strlen-stub.o)
+ .ARM.attributes
+                0x0000067c       0x2c c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-ctype_.o)
+
+.comment        0x00000000       0x4d
+ .comment       0x00000000       0x4d d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+                                 0x4e (size before relaxing)
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/bsp_hw.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+ .comment       0x0000004d       0x4e d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+
+.debug_line     0x00000000     0xbea1
+ .debug_line    0x00000000      0x115 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7_asm.o
+ .debug_line    0x00000115      0x227 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+ .debug_line    0x0000033c      0x370 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+ .debug_line    0x000006ac      0x718 d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+ .debug_line    0x00000dc4      0x790 d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+ .debug_line    0x00001554      0x3ce d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+ .debug_line    0x00001922      0x80d d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+ .debug_line    0x0000212f      0x73a d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .debug_line    0x00002869      0x3de d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+ .debug_line    0x00002c47      0x821 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .debug_line    0x00003468      0xce3 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .debug_line    0x0000414b      0x27f d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+ .debug_line    0x000043ca      0xb53 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .debug_line    0x00004f1d      0x22b d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .debug_line    0x00005148      0x2d2 d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+ .debug_line    0x0000541a     0x2873 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .debug_line    0x00007c8d      0x4e9 d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+ .debug_line    0x00008176      0x7d6 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .debug_line    0x0000894c      0x446 d:/my_github/samd21_tnkernel3_usb/obj/bsp_hw.o
+ .debug_line    0x00008d92      0x890 d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+ .debug_line    0x00009622      0x7ca d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .debug_line    0x00009dec      0x8a8 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .debug_line    0x0000a694      0x504 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .debug_line    0x0000ab98      0x9e7 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .debug_line    0x0000b57f      0x2a8 d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+ .debug_line    0x0000b827      0x580 d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+ .debug_line    0x0000bda7       0xfa d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+
+.debug_info     0x00000000    0x24e8a
+ .debug_info    0x00000000       0x26 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7_asm.o
+ .debug_info    0x00000026      0x40c d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+ .debug_info    0x00000432      0x94e d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+ .debug_info    0x00000d80      0x835 d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+ .debug_info    0x000015b5     0x101e d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+ .debug_info    0x000025d3      0x85c d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+ .debug_info    0x00002e2f      0xe35 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+ .debug_info    0x00003c64      0xafe d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .debug_info    0x00004762      0x651 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+ .debug_info    0x00004db3      0xf55 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .debug_info    0x00005d08     0x1b84 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .debug_info    0x0000788c      0x1db d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+ .debug_info    0x00007a67     0x15ca d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .debug_info    0x00009031      0x283 d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .debug_info    0x000092b4      0x240 d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+ .debug_info    0x000094f4     0x837c d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .debug_info    0x00011870      0x6c2 d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+ .debug_info    0x00011f32     0x311c d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .debug_info    0x0001504e     0x4673 d:/my_github/samd21_tnkernel3_usb/obj/bsp_hw.o
+ .debug_info    0x000196c1     0x3c03 d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+ .debug_info    0x0001d2c4      0xdab d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .debug_info    0x0001e06f     0x1e0b d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .debug_info    0x0001fe7a      0x9fd d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .debug_info    0x00020877     0x149f d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .debug_info    0x00021d16     0x297e d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+ .debug_info    0x00024694      0x6c4 d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+ .debug_info    0x00024d58      0x132 d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+
+.debug_abbrev   0x00000000     0x4e45
+ .debug_abbrev  0x00000000       0x14 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7_asm.o
+ .debug_abbrev  0x00000014      0x1a8 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+ .debug_abbrev  0x000001bc      0x25b d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+ .debug_abbrev  0x00000417      0x28b d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+ .debug_abbrev  0x000006a2      0x2fd d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+ .debug_abbrev  0x0000099f      0x240 d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+ .debug_abbrev  0x00000bdf      0x36d d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+ .debug_abbrev  0x00000f4c      0x274 d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .debug_abbrev  0x000011c0      0x27f d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+ .debug_abbrev  0x0000143f      0x42c d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .debug_abbrev  0x0000186b      0x404 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .debug_abbrev  0x00001c6f      0x145 d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+ .debug_abbrev  0x00001db4      0x43b d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .debug_abbrev  0x000021ef       0xeb d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .debug_abbrev  0x000022da      0x107 d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+ .debug_abbrev  0x000023e1      0x685 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .debug_abbrev  0x00002a66      0x1b8 d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+ .debug_abbrev  0x00002c1e      0x3c8 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .debug_abbrev  0x00002fe6      0x248 d:/my_github/samd21_tnkernel3_usb/obj/bsp_hw.o
+ .debug_abbrev  0x0000322e      0x4d7 d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+ .debug_abbrev  0x00003705      0x41e d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .debug_abbrev  0x00003b23      0x59d d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .debug_abbrev  0x000040c0      0x278 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .debug_abbrev  0x00004338      0x475 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .debug_abbrev  0x000047ad      0x2d6 d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+ .debug_abbrev  0x00004a83      0x331 d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+ .debug_abbrev  0x00004db4       0x91 d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+
+.debug_aranges  0x00000000      0xab8
+ .debug_aranges
+                0x00000000       0x20 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7_asm.o
+ .debug_aranges
+                0x00000020       0x38 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+ .debug_aranges
+                0x00000058       0x40 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+ .debug_aranges
+                0x00000098       0x50 d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+ .debug_aranges
+                0x000000e8       0x58 d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+ .debug_aranges
+                0x00000140       0x48 d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+ .debug_aranges
+                0x00000188       0x88 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+ .debug_aranges
+                0x00000210       0x60 d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .debug_aranges
+                0x00000270       0x80 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+ .debug_aranges
+                0x000002f0       0x70 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .debug_aranges
+                0x00000360       0xe0 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .debug_aranges
+                0x00000440       0x30 d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+ .debug_aranges
+                0x00000470      0x100 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .debug_aranges
+                0x00000570       0x48 d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .debug_aranges
+                0x000005b8       0x40 d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+ .debug_aranges
+                0x000005f8      0x140 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .debug_aranges
+                0x00000738       0x48 d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+ .debug_aranges
+                0x00000780       0x60 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .debug_aranges
+                0x000007e0       0x28 d:/my_github/samd21_tnkernel3_usb/obj/bsp_hw.o
+ .debug_aranges
+                0x00000808       0x60 d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+ .debug_aranges
+                0x00000868       0x70 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .debug_aranges
+                0x000008d8       0x78 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .debug_aranges
+                0x00000950       0x50 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .debug_aranges
+                0x000009a0       0x70 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .debug_aranges
+                0x00000a10       0x30 d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+ .debug_aranges
+                0x00000a40       0x40 d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+ .debug_aranges
+                0x00000a80       0x38 d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+
+.debug_str      0x00000000     0x6005
+ .debug_str     0x00000000       0x7b d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7_asm.o
+ .debug_str     0x0000007b      0x2dc d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+                                0x3ae (size before relaxing)
+ .debug_str     0x00000357      0x2ff d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+                                0x5cb (size before relaxing)
+ .debug_str     0x00000656      0x1bd d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+                                0x3b1 (size before relaxing)
+ .debug_str     0x00000813      0x248 d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+                                0x588 (size before relaxing)
+ .debug_str     0x00000a5b       0x74 d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+                                0x424 (size before relaxing)
+ .debug_str     0x00000acf      0x1f8 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+                                0x5ec (size before relaxing)
+ .debug_str     0x00000cc7      0x103 d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+                                0x4db (size before relaxing)
+ .debug_str     0x00000dca       0x84 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+                                0x3cd (size before relaxing)
+ .debug_str     0x00000e4e      0x891 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+                                0xa4b (size before relaxing)
+ .debug_str     0x000016df      0x7c2 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+                                0xe43 (size before relaxing)
+ .debug_str     0x00001ea1       0xd2 d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+                                0x222 (size before relaxing)
+ .debug_str     0x00001f73      0x5de d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+                                0xae1 (size before relaxing)
+ .debug_str     0x00002551       0x8d d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+                                0x230 (size before relaxing)
+ .debug_str     0x000025de       0xbc d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+                                0x23a (size before relaxing)
+ .debug_str     0x0000269a     0x1ace d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+                               0x2293 (size before relaxing)
+ .debug_str     0x00004168       0x99 d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+                                0x39a (size before relaxing)
+ .debug_str     0x00004201      0xc20 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+                               0x10c8 (size before relaxing)
+ .debug_str     0x00004e21      0x3ab d:/my_github/samd21_tnkernel3_usb/obj/bsp_hw.o
+                               0x12be (size before relaxing)
+ .debug_str     0x000051cc      0x327 d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+                               0x135e (size before relaxing)
+ .debug_str     0x000054f3      0x1c3 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+                                0x7a0 (size before relaxing)
+ .debug_str     0x000056b6      0x435 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+                                0xef8 (size before relaxing)
+ .debug_str     0x00005aeb       0xf1 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+                                0x500 (size before relaxing)
+ .debug_str     0x00005bdc      0x1ff d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+                                0x789 (size before relaxing)
+ .debug_str     0x00005ddb       0xb0 d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+                                0xc4a (size before relaxing)
+ .debug_str     0x00005e8b      0x13b d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+                                0x250 (size before relaxing)
+ .debug_str     0x00005fc6       0x3f d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+                                0x1d1 (size before relaxing)
+
+.debug_loc      0x00000000     0xec5c
+ .debug_loc     0x00000000      0x31b d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+ .debug_loc     0x0000031b      0x347 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+ .debug_loc     0x00000662      0xb8b d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+ .debug_loc     0x000011ed     0x10fd d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+ .debug_loc     0x000022ea      0x7a9 d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+ .debug_loc     0x00002a93      0xc06 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+ .debug_loc     0x00003699      0xc0c d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .debug_loc     0x000042a5      0x312 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+ .debug_loc     0x000045b7      0x7ac d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .debug_loc     0x00004d63     0x1206 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .debug_loc     0x00005f69       0x2a d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+ .debug_loc     0x00005f93      0xe10 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .debug_loc     0x00006da3       0xf4 d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .debug_loc     0x00006e97       0xf8 d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+ .debug_loc     0x00006f8f     0x3ff9 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .debug_loc     0x0000af88      0x411 d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+ .debug_loc     0x0000b399      0x436 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .debug_loc     0x0000b7cf       0xf6 d:/my_github/samd21_tnkernel3_usb/obj/bsp_hw.o
+ .debug_loc     0x0000b8c5      0x8d6 d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+ .debug_loc     0x0000c19b      0x696 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .debug_loc     0x0000c831      0x85d d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .debug_loc     0x0000d08e      0x3d7 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .debug_loc     0x0000d465      0xe6a d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .debug_loc     0x0000e2cf       0x15 d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+ .debug_loc     0x0000e2e4      0x978 d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+
+.debug_ranges   0x00000000     0x1ef0
+ .debug_ranges  0x00000000       0x28 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+ .debug_ranges  0x00000028       0x30 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+ .debug_ranges  0x00000058       0x58 d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+ .debug_ranges  0x000000b0      0x108 d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+ .debug_ranges  0x000001b8       0xa0 d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+ .debug_ranges  0x00000258      0x130 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+ .debug_ranges  0x00000388      0x118 d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .debug_ranges  0x000004a0       0x70 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+ .debug_ranges  0x00000510      0x180 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .debug_ranges  0x00000690      0x2e0 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .debug_ranges  0x00000970       0x20 d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+ .debug_ranges  0x00000990      0x180 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .debug_ranges  0x00000b10       0x50 d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .debug_ranges  0x00000b60       0x30 d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+ .debug_ranges  0x00000b90      0xca0 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .debug_ranges  0x00001830       0xf8 d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+ .debug_ranges  0x00001928       0x70 d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .debug_ranges  0x00001998       0x30 d:/my_github/samd21_tnkernel3_usb/obj/bsp_hw.o
+ .debug_ranges  0x000019c8       0xf0 d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+ .debug_ranges  0x00001ab8       0x60 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .debug_ranges  0x00001b18      0x110 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .debug_ranges  0x00001c28       0x58 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .debug_ranges  0x00001c80      0x108 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .debug_ranges  0x00001d88       0x20 d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+ .debug_ranges  0x00001da8      0x120 d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+ .debug_ranges  0x00001ec8       0x28 d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+
+.debug_frame    0x00000000     0x1c94
+ .debug_frame   0x00000000       0x64 d:/my_github/samd21_tnkernel3_usb/obj/tn_port_CortexM0_M7.o
+ .debug_frame   0x00000064       0x98 d:/my_github/samd21_tnkernel3_usb/obj/tn.o
+ .debug_frame   0x000000fc       0xe8 d:/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o
+ .debug_frame   0x000001e4       0xfc d:/my_github/samd21_tnkernel3_usb/obj/tn_dqueue.o
+ .debug_frame   0x000002e0       0xbc d:/my_github/samd21_tnkernel3_usb/obj/tn_sem.o
+ .debug_frame   0x0000039c      0x190 d:/my_github/samd21_tnkernel3_usb/obj/tn_sys.o
+ .debug_frame   0x0000052c      0x10c d:/my_github/samd21_tnkernel3_usb/obj/tn_task.o
+ .debug_frame   0x00000638       0xe8 d:/my_github/samd21_tnkernel3_usb/obj/tn_utils.o
+ .debug_frame   0x00000720      0x118 d:/my_github/samd21_tnkernel3_usb/obj/cdcdf_acm.o
+ .debug_frame   0x00000838      0x278 d:/my_github/samd21_tnkernel3_usb/obj/usbdc.o
+ .debug_frame   0x00000ab0       0x40 d:/my_github/samd21_tnkernel3_usb/obj/hal_atomic.o
+ .debug_frame   0x00000af0      0x304 d:/my_github/samd21_tnkernel3_usb/obj/hal_usb_device.o
+ .debug_frame   0x00000df4       0x70 d:/my_github/samd21_tnkernel3_usb/obj/utils_list.o
+ .debug_frame   0x00000e64       0x68 d:/my_github/samd21_tnkernel3_usb/obj/utils_ringbuffer.o
+ .debug_frame   0x00000ecc      0x398 d:/my_github/samd21_tnkernel3_usb/obj/hpl_usb.o
+ .debug_frame   0x00001264       0xa4 d:/my_github/samd21_tnkernel3_usb/obj/usb_protocol.o
+ .debug_frame   0x00001308       0xfc d:/my_github/samd21_tnkernel3_usb/obj/bsp_dma.o
+ .debug_frame   0x00001404       0x44 d:/my_github/samd21_tnkernel3_usb/obj/bsp_hw.o
+ .debug_frame   0x00001448      0x10c d:/my_github/samd21_tnkernel3_usb/obj/bsp_uart0.o
+ .debug_frame   0x00001554      0x130 d:/my_github/samd21_tnkernel3_usb/obj/bsp_usb_uart.o
+ .debug_frame   0x00001684      0x138 d:/my_github/samd21_tnkernel3_usb/obj/main.o
+ .debug_frame   0x000017bc       0xc8 d:/my_github/samd21_tnkernel3_usb/obj/prj_shell_func.o
+ .debug_frame   0x00001884      0x150 d:/my_github/samd21_tnkernel3_usb/obj/shell.o
+ .debug_frame   0x000019d4       0x48 d:/my_github/samd21_tnkernel3_usb/obj/startup_samd21g18_gcc.o
+ .debug_frame   0x00001a1c       0x9c d:/my_github/samd21_tnkernel3_usb/obj/tn_sprintf.o
+ .debug_frame   0x00001ab8       0x68 d:/my_github/samd21_tnkernel3_usb/obj/tn_user.o
+ .debug_frame   0x00001b20       0x20 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_udivsi3.o)
+ .debug_frame   0x00001b40       0x20 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/thumb/v6-m/nofp\libgcc.a(_divsi3.o)
+ .debug_frame   0x00001b60       0x2c c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memcmp.o)
+ .debug_frame   0x00001b8c       0x34 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memcpy-stub.o)
+ .debug_frame   0x00001bc0       0x30 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-memset.o)
+ .debug_frame   0x00001bf0       0x30 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcasecmp.o)
+ .debug_frame   0x00001c20       0x2c c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcat.o)
+ .debug_frame   0x00001c4c       0x20 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strcpy.o)
+ .debug_frame   0x00001c6c       0x28 c:/program files (x86)/gnu arm embedded toolchain/10 2020-q4-major/bin/../lib/gcc/arm-none-eabi/10.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp\libc.a(lib_a-strlen-stub.o)

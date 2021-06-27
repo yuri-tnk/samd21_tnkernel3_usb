@@ -1,0 +1,27 @@
+
+
+Breakpoint=shell.c:187, State=BP_STATE_DISABLED
+Breakpoint=shell.c:233, State=BP_STATE_DISABLED
+OpenDocument="startup_samd21g18_gcc.c", FilePath="/home/yurit/Projects/ATSAM_D21/rtos_usb_g/startup_samd21g18_gcc.c", Line=166
+OpenDocument="shell.c", FilePath="/home/yurit/Projects/ATSAM_D21/rtos_usb_g/shell.c", Line=119
+OpenDocument="main.c", FilePath="/home/yurit/Projects/ATSAM_D21/rtos_usb_g/main.c", Line=167
+OpenToolbar="Debug", Floating=0, x=0, y=0
+OpenWindow="Registers 1", DockArea=RIGHT, x=0, y=1, w=444, h=288, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, FilteredItems=[], RefreshRate=1
+OpenWindow="Source Files", DockArea=LEFT, x=0, y=2, w=246, h=200, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Disassembly", DockArea=RIGHT, x=0, y=0, w=444, h=219, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Memory 1", DockArea=BOTTOM, x=2, y=0, w=512, h=240, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0, EditorAddress=0x20000C78
+OpenWindow="Watched Data 1", DockArea=LEFT, x=0, y=0, w=246, h=138, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Functions", DockArea=LEFT, x=0, y=1, w=246, h=163, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Terminal", DockArea=BOTTOM, x=1, y=0, w=261, h=240, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+OpenWindow="Console", DockArea=BOTTOM, x=0, y=0, w=513, h=240, FilterBarShown=0, TotalValueBarShown=0, ToolBarShown=0
+TableHeader="Functions", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Address";"Size";"#Insts";"Source"], ColWidths=[231;100;100;100;217]
+TableHeader="Source Files", SortCol="File", SortOrder="ASCENDING", VisibleCols=["File";"Status";"Size";"#Insts";"Path"], ColWidths=[211;100;100;100;707]
+TableHeader="Power Sampling", SortCol="Index", SortOrder="ASCENDING", VisibleCols=["Index";"Time";"Ch 0"], ColWidths=[100;100;100]
+TableHeader="Registers 1", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Description"], ColWidths=[100;105;259]
+TableHeader="RegisterSelectionDialog", SortCol="None", SortOrder="ASCENDING", VisibleCols=[], ColWidths=[]
+TableHeader="TargetExceptionDialog", SortCol="Name", SortOrder="ASCENDING", VisibleCols=["Name";"Value";"Address";"Description"], ColWidths=[200;100;100;376]
+TableHeader="Watched Data 1", SortCol="Expression", SortOrder="ASCENDING", VisibleCols=["Expression";"Value";"Location";"Refresh"], ColWidths=[100;154;100;100]
+WatchedExpression="sh_info->dque.data_fifo", Window=Watched Data 1
+WatchedExpression="hs_entry", Window=Watched Data 1
+WatchedExpression="sh_info->cl_buf", Window=Watched Data 1
+WatchedExpression="sh_info", Window=Watched Data 1

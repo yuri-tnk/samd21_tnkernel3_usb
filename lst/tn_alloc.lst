@@ -1,0 +1,660 @@
+
+/media/yurit/Samsung_T5/my_github/samd21_tnkernel3_usb/obj/tn_alloc.o:     file format elf32-littlearm
+
+
+Disassembly of section .text.do_deallocate:
+
+00000000 <do_deallocate>:
+    return rc;
+}
+
+//----------------------------------------------------------------------------
+static int do_deallocate(MEMINFO * mi, void * p_mem)
+{
+   0:	0003      	movs	r3, r0
+   2:	b5f7      	push	{r0, r1, r2, r4, r5, r6, r7, lr}
+    unsigned long curr_last_addr;
+    unsigned long next_start_addr;
+    unsigned long tmp;
+
+    block_start_addr = (unsigned long)((char*)p_mem);
+    if(block_start_addr < M_ALIG || mi == NULL)
+   4:	2907      	cmp	r1, #7
+   6:	d800      	bhi.n	a <do_deallocate+0xa>
+   8:	e081      	b.n	10e <do_deallocate+0x10e>
+   a:	2800      	cmp	r0, #0
+   c:	d100      	bne.n	10 <do_deallocate+0x10>
+   e:	e07e      	b.n	10e <do_deallocate+0x10e>
+    {
+        rc = -1;
+    }
+    else
+    {
+        block_start_addr -= M_ALIG; // Get header
+  10:	3908      	subs	r1, #8
+        block =  (MEMHDR *)block_start_addr;
+        block_last_addr  = block_start_addr + block->size - M_ALIG;
+  12:	684c      	ldr	r4, [r1, #4]
+  14:	1867      	adds	r7, r4, r1
+  16:	003a      	movs	r2, r7
+  18:	3a08      	subs	r2, #8
+  1a:	9200      	str	r2, [sp, #0]
+
+
+        //u_printf("==== dealloc: %d\r\n", block->size);
+
+        if(((block->size & (M_ALIG - 1UL)) != 0UL) ||   // bad align
+  1c:	0762      	lsls	r2, r4, #29
+  1e:	d000      	beq.n	22 <do_deallocate+0x22>
+  20:	e075      	b.n	10e <do_deallocate+0x10e>
+                block->next != NULL || // memory corrupted
+  22:	680e      	ldr	r6, [r1, #0]
+        if(((block->size & (M_ALIG - 1UL)) != 0UL) ||   // bad align
+  24:	2e00      	cmp	r6, #0
+  26:	d000      	beq.n	2a <do_deallocate+0x2a>
+  28:	e071      	b.n	10e <do_deallocate+0x10e>
+                block->next != NULL || // memory corrupted
+  2a:	6882      	ldr	r2, [r0, #8]
+  2c:	428a      	cmp	r2, r1
+  2e:	d900      	bls.n	32 <do_deallocate+0x32>
+  30:	e06d      	b.n	10e <do_deallocate+0x10e>
+                block_start_addr < mi->buf_start_addr ||
+  32:	68c2      	ldr	r2, [r0, #12]
+  34:	9800      	ldr	r0, [sp, #0]
+  36:	4282      	cmp	r2, r0
+  38:	d369      	bcc.n	10e <do_deallocate+0x10e>
+        {
+            rc = -1;
+        }
+        else
+        {
+            if(mi->f_next == NULL)   // no free blocks
+  3a:	681a      	ldr	r2, [r3, #0]
+  3c:	4694      	mov	ip, r2
+  3e:	1e10      	subs	r0, r2, #0
+  40:	d105      	bne.n	4e <do_deallocate+0x4e>
+            {
+                mi->f_next = block;
+                mi->t_free += block->size;
+  42:	685a      	ldr	r2, [r3, #4]
+                mi->f_next = block;
+  44:	6019      	str	r1, [r3, #0]
+                mi->t_free += block->size;
+  46:	1914      	adds	r4, r2, r4
+  48:	605c      	str	r4, [r3, #4]
+                }
+            }
+        }
+    }
+    return rc;
+}
+  4a:	bdfe      	pop	{r1, r2, r3, r4, r5, r6, r7, pc}
+  4c:	0002      	movs	r2, r0
+                    curr_last_addr  = curr_start_addr + ptr->size - M_ALIG;
+  4e:	6855      	ldr	r5, [r2, #4]
+  50:	18a8      	adds	r0, r5, r2
+  52:	9001      	str	r0, [sp, #4]
+                    if(block_start_addr < curr_start_addr)
+  54:	4291      	cmp	r1, r2
+  56:	d21c      	bcs.n	92 <do_deallocate+0x92>
+                        if(block_last_addr >= curr_start_addr)
+  58:	9800      	ldr	r0, [sp, #0]
+  5a:	4290      	cmp	r0, r2
+  5c:	d257      	bcs.n	10e <do_deallocate+0x10e>
+                mi->t_free += block->size;
+  5e:	6858      	ldr	r0, [r3, #4]
+  60:	1820      	adds	r0, r4, r0
+                                mi->t_free += block->size;
+  62:	6058      	str	r0, [r3, #4]
+                            if(block_last_addr + M_ALIG == curr_start_addr)
+  64:	4297      	cmp	r7, r2
+  66:	d10d      	bne.n	84 <do_deallocate+0x84>
+                                if(ptr_prev == NULL)  // no prev
+  68:	2e00      	cmp	r6, #0
+  6a:	d107      	bne.n	7c <do_deallocate+0x7c>
+                                    ptr_tmp = mi->f_next->next;
+  6c:	4662      	mov	r2, ip
+  6e:	6812      	ldr	r2, [r2, #0]
+                                    mi->f_next   = block;
+  70:	6019      	str	r1, [r3, #0]
+                                    mi->f_next->next = ptr_tmp;
+  72:	600a      	str	r2, [r1, #0]
+                                block->size += ptr->size;
+  74:	1964      	adds	r4, r4, r5
+  76:	604c      	str	r4, [r1, #4]
+                                block->next = ptr;
+  78:	2000      	movs	r0, #0
+  7a:	e7e6      	b.n	4a <do_deallocate+0x4a>
+                                    ptr_tmp = ptr_prev->next;
+  7c:	6833      	ldr	r3, [r6, #0]
+                                    ptr_prev->next = block;
+  7e:	6031      	str	r1, [r6, #0]
+                                    block->next = ptr_tmp;
+  80:	600b      	str	r3, [r1, #0]
+  82:	e7f7      	b.n	74 <do_deallocate+0x74>
+                                if(ptr_prev == NULL)  // no prev
+  84:	2e00      	cmp	r6, #0
+  86:	d102      	bne.n	8e <do_deallocate+0x8e>
+                                    mi->f_next = block;
+  88:	6019      	str	r1, [r3, #0]
+                                block->next = ptr;
+  8a:	600a      	str	r2, [r1, #0]
+  8c:	e7f4      	b.n	78 <do_deallocate+0x78>
+                                    ptr_prev->next = block;
+  8e:	6031      	str	r1, [r6, #0]
+  90:	e7fb      	b.n	8a <do_deallocate+0x8a>
+                    else if(block_start_addr == curr_start_addr)
+  92:	4291      	cmp	r1, r2
+  94:	d03b      	beq.n	10e <do_deallocate+0x10e>
+                        next_start_addr = (unsigned long)ptr->next;
+  96:	6810      	ldr	r0, [r2, #0]
+                        if(next_start_addr != 0UL)
+  98:	2800      	cmp	r0, #0
+  9a:	d028      	beq.n	ee <do_deallocate+0xee>
+                            if(block_start_addr < next_start_addr)
+  9c:	0016      	movs	r6, r2
+  9e:	4281      	cmp	r1, r0
+  a0:	d2d4      	bcs.n	4c <do_deallocate+0x4c>
+                                if(block_last_addr >= next_start_addr)
+  a2:	9e00      	ldr	r6, [sp, #0]
+  a4:	4286      	cmp	r6, r0
+  a6:	d232      	bcs.n	10e <do_deallocate+0x10e>
+                mi->t_free += block->size;
+  a8:	685e      	ldr	r6, [r3, #4]
+  aa:	19a6      	adds	r6, r4, r6
+                                    if(block_last_addr + M_ALIG == next_start_addr)
+  ac:	4287      	cmp	r7, r0
+  ae:	d114      	bne.n	da <do_deallocate+0xda>
+                                            ptr->next = ptr->next->next;
+  b0:	6838      	ldr	r0, [r7, #0]
+                                            mi->t_free += block->size;
+  b2:	605e      	str	r6, [r3, #4]
+                                            ptr->next = ptr->next->next;
+  b4:	4684      	mov	ip, r0
+                                        if(block_start_addr == curr_last_addr + M_ALIG)
+  b6:	9801      	ldr	r0, [sp, #4]
+  b8:	4288      	cmp	r0, r1
+  ba:	d107      	bne.n	cc <do_deallocate+0xcc>
+                                            ptr->size += block->size;
+  bc:	1965      	adds	r5, r4, r5
+  be:	6055      	str	r5, [r2, #4]
+                                            ptr->size += tmp;
+  c0:	687b      	ldr	r3, [r7, #4]
+  c2:	195d      	adds	r5, r3, r5
+                                            ptr->next = ptr->next->next;
+  c4:	4663      	mov	r3, ip
+                                            ptr->size += tmp;
+  c6:	6055      	str	r5, [r2, #4]
+                                            ptr->next = ptr->next->next;
+  c8:	6013      	str	r3, [r2, #0]
+  ca:	e7d5      	b.n	78 <do_deallocate+0x78>
+                                            tmp = ptr->next->size;
+  cc:	687b      	ldr	r3, [r7, #4]
+                                            ptr->next = block;
+  ce:	6011      	str	r1, [r2, #0]
+                                            ptr->next->size += tmp;
+  d0:	18e4      	adds	r4, r4, r3
+                                            block->next = ptr_tmp;
+  d2:	4663      	mov	r3, ip
+                                            ptr->next->size += tmp;
+  d4:	604c      	str	r4, [r1, #4]
+                                            block->next = ptr_tmp;
+  d6:	600b      	str	r3, [r1, #0]
+  d8:	e7ce      	b.n	78 <do_deallocate+0x78>
+                                        if(block_start_addr == curr_last_addr + M_ALIG)
+  da:	9f01      	ldr	r7, [sp, #4]
+                                            mi->t_free += block->size;
+  dc:	605e      	str	r6, [r3, #4]
+                                        if(block_start_addr == curr_last_addr + M_ALIG)
+  de:	428f      	cmp	r7, r1
+  e0:	d102      	bne.n	e8 <do_deallocate+0xe8>
+                                            ptr->size += block->size;
+  e2:	1964      	adds	r4, r4, r5
+  e4:	6054      	str	r4, [r2, #4]
+  e6:	e7c7      	b.n	78 <do_deallocate+0x78>
+                                            ptr->next = block;
+  e8:	6011      	str	r1, [r2, #0]
+                                            block->next = ptr_tmp;
+  ea:	6008      	str	r0, [r1, #0]
+  ec:	e7c4      	b.n	78 <do_deallocate+0x78>
+                    curr_last_addr  = curr_start_addr + ptr->size - M_ALIG;
+  ee:	18ae      	adds	r6, r5, r2
+  f0:	3e08      	subs	r6, #8
+                            if(block_start_addr > curr_last_addr)
+  f2:	42b1      	cmp	r1, r6
+  f4:	d90b      	bls.n	10e <do_deallocate+0x10e>
+                mi->t_free += block->size;
+  f6:	685e      	ldr	r6, [r3, #4]
+                                if(block_start_addr == curr_last_addr + M_ALIG)
+  f8:	18af      	adds	r7, r5, r2
+                mi->t_free += block->size;
+  fa:	19a6      	adds	r6, r4, r6
+                                    mi->t_free += block->size;
+  fc:	605e      	str	r6, [r3, #4]
+                                if(block_start_addr == curr_last_addr + M_ALIG)
+  fe:	428f      	cmp	r7, r1
+ 100:	d102      	bne.n	108 <do_deallocate+0x108>
+                                    ptr->size += block->size;
+ 102:	1964      	adds	r4, r4, r5
+ 104:	6054      	str	r4, [r2, #4]
+ 106:	e7a0      	b.n	4a <do_deallocate+0x4a>
+                                    ptr->next = block;
+ 108:	6011      	str	r1, [r2, #0]
+                                    block->next = ptr_tmp;
+ 10a:	6008      	str	r0, [r1, #0]
+ 10c:	e79d      	b.n	4a <do_deallocate+0x4a>
+        rc = -1;
+ 10e:	2001      	movs	r0, #1
+ 110:	4240      	negs	r0, r0
+    return rc;
+ 112:	e79a      	b.n	4a <do_deallocate+0x4a>
+
+Disassembly of section .text.do_allocate:
+
+00000000 <do_allocate>:
+    unsigned long tmp;
+
+// Min block size - Hdr + M_Align = 16 bytes
+#define MIN_SPLIT  16UL //24L
+
+    tmp = ((need_size + (M_ALIG - 1UL)) & (~(M_ALIG-1UL)));
+   0:	2307      	movs	r3, #7
+   2:	3107      	adds	r1, #7
+   4:	4399      	bics	r1, r3
+    if(tmp > 0xFFFFFFFFU - M_ALIG || mi == NULL)
+   6:	000b      	movs	r3, r1
+{
+   8:	b5f0      	push	{r4, r5, r6, r7, lr}
+    if(tmp > 0xFFFFFFFFU - M_ALIG || mi == NULL)
+   a:	3308      	adds	r3, #8
+   c:	d02a      	beq.n	64 <do_allocate+0x64>
+   e:	2800      	cmp	r0, #0
+  10:	d019      	beq.n	46 <do_allocate+0x46>
+    MEMHDR * ptr_prev = NULL;
+  12:	2400      	movs	r4, #0
+        return NULL;
+    }
+    a_size = tmp + M_ALIG; // Actual alloc size
+
+
+    for(ptr = mi->f_next; ptr != NULL; ptr = ptr->next)
+  14:	6803      	ldr	r3, [r0, #0]
+    a_size = tmp + M_ALIG; // Actual alloc size
+  16:	3108      	adds	r1, #8
+    for(ptr = mi->f_next; ptr != NULL; ptr = ptr->next)
+  18:	2b00      	cmp	r3, #0
+  1a:	d013      	beq.n	44 <do_allocate+0x44>
+    {
+        curr_size = ptr->size;
+  1c:	685e      	ldr	r6, [r3, #4]
+            if(curr_size - a_size  >= MIN_SPLIT)  // split block
+            {
+                //  tmp = (unsigned long)ptr;
+                tmp += a_size;
+                new_block = (MEMHDR *)tmp;
+                new_block->next = ptr->next;
+  1e:	681d      	ldr	r5, [r3, #0]
+        if(curr_size >= a_size)
+  20:	42b1      	cmp	r1, r6
+  22:	d81c      	bhi.n	5e <do_allocate+0x5e>
+            if(curr_size - a_size  >= MIN_SPLIT)  // split block
+  24:	6842      	ldr	r2, [r0, #4]
+  26:	1a77      	subs	r7, r6, r1
+  28:	2f0f      	cmp	r7, #15
+  2a:	d90f      	bls.n	4c <do_allocate+0x4c>
+                tmp += a_size;
+  2c:	18ce      	adds	r6, r1, r3
+                new_block->next = ptr->next;
+  2e:	6035      	str	r5, [r6, #0]
+                new_block->size = curr_size - a_size;
+  30:	6077      	str	r7, [r6, #4]
+
+                if(ptr_prev == NULL)
+  32:	2c00      	cmp	r4, #0
+  34:	d108      	bne.n	48 <do_allocate+0x48>
+                {
+                    mi->f_next = new_block;
+  36:	6006      	str	r6, [r0, #0]
+                else
+                {
+                    ptr_prev->next = new_block;
+                }
+
+                ret_block->size = a_size;
+  38:	6059      	str	r1, [r3, #4]
+                mi->t_free -= a_size;
+  3a:	1a51      	subs	r1, r2, r1
+  3c:	6041      	str	r1, [r0, #4]
+                }
+                ret_block->size = ptr->size;
+                mi->t_free -= ptr->size;
+            }
+
+            ret_block->next = NULL;
+  3e:	2200      	movs	r2, #0
+  40:	601a      	str	r2, [r3, #0]
+        ptr_prev = ptr;
+    }
+    tmp  = (unsigned long)ret_block;
+    if(tmp > 0UL)
+    {
+        tmp += M_ALIG;
+  42:	3308      	adds	r3, #8
+    }
+    return (void*)((char*)tmp);
+  44:	0018      	movs	r0, r3
+}
+  46:	bdf0      	pop	{r4, r5, r6, r7, pc}
+                    ptr_prev->next = new_block;
+  48:	6026      	str	r6, [r4, #0]
+  4a:	e7f5      	b.n	38 <do_allocate+0x38>
+                if(ptr_prev == NULL)
+  4c:	2c00      	cmp	r4, #0
+  4e:	d104      	bne.n	5a <do_allocate+0x5a>
+                    mi->f_next = ptr->next; // May be NULL
+  50:	6005      	str	r5, [r0, #0]
+                mi->t_free -= ptr->size;
+  52:	1b92      	subs	r2, r2, r6
+                ret_block->size = ptr->size;
+  54:	605e      	str	r6, [r3, #4]
+                mi->t_free -= ptr->size;
+  56:	6042      	str	r2, [r0, #4]
+  58:	e7f1      	b.n	3e <do_allocate+0x3e>
+                    ptr_prev->next = ptr->next;
+  5a:	6025      	str	r5, [r4, #0]
+  5c:	e7f9      	b.n	52 <do_allocate+0x52>
+  5e:	001c      	movs	r4, r3
+                new_block->next = ptr->next;
+  60:	002b      	movs	r3, r5
+  62:	e7d9      	b.n	18 <do_allocate+0x18>
+        return NULL;
+  64:	2000      	movs	r0, #0
+  66:	e7ee      	b.n	46 <do_allocate+0x46>
+
+Disassembly of section .text.tn_alloc_init:
+
+00000000 <tn_alloc_init>:
+{
+   0:	b510      	push	{r4, lr}
+    if(mi == NULL || buf == NULL || buf_size < MIN_POOL_SIZE)
+   2:	2800      	cmp	r0, #0
+   4:	d019      	beq.n	3a <tn_alloc_init+0x3a>
+   6:	2900      	cmp	r1, #0
+   8:	d017      	beq.n	3a <tn_alloc_init+0x3a>
+   a:	2a2f      	cmp	r2, #47	; 0x2f
+   c:	d915      	bls.n	3a <tn_alloc_init+0x3a>
+        mi->buf_start_addr =  (tmp +(M_ALIG-1UL)) & (~(M_ALIG-1UL));
+   e:	2407      	movs	r4, #7
+  10:	1dcb      	adds	r3, r1, #7
+  12:	43a3      	bics	r3, r4
+        a_buf_size = buf_size - (tmp - mi->buf_start_addr);
+  14:	1a52      	subs	r2, r2, r1
+        mi->buf_last_addr = mi->buf_start_addr + a_buf_size - M_ALIG;
+  16:	0019      	movs	r1, r3
+        a_buf_size = buf_size - (tmp - mi->buf_start_addr);
+  18:	18d2      	adds	r2, r2, r3
+        a_buf_size &= ~(M_ALIG - 1UL);  // actual buf size is also aligned
+  1a:	43a2      	bics	r2, r4
+        mi->buf_last_addr = mi->buf_start_addr + a_buf_size - M_ALIG;
+  1c:	3908      	subs	r1, #8
+  1e:	1889      	adds	r1, r1, r2
+  20:	60c1      	str	r1, [r0, #12]
+        mi->f_next->next = NULL;
+  22:	2100      	movs	r1, #0
+        mi->buf_start_addr =  (tmp +(M_ALIG-1UL)) & (~(M_ALIG-1UL));
+  24:	6083      	str	r3, [r0, #8]
+        mi->f_next       = (MEMHDR *)(mi->buf_start_addr);
+  26:	6003      	str	r3, [r0, #0]
+        mi->f_next->size = a_buf_size;
+  28:	c306      	stmia	r3!, {r1, r2}
+        mi->t_free       = a_buf_size;
+  2a:	6042      	str	r2, [r0, #4]
+        rc = tn_sem_create(&mi->m_sem, 1, 1);
+  2c:	2201      	movs	r2, #1
+        mi->m_sem.id_sem = 0UL;
+  2e:	6201      	str	r1, [r0, #32]
+        rc = tn_sem_create(&mi->m_sem, 1, 1);
+  30:	0011      	movs	r1, r2
+  32:	3010      	adds	r0, #16
+  34:	f7ff fffe 	bl	0 <tn_sem_create>
+}
+  38:	bd10      	pop	{r4, pc}
+        rc = TERR_WPARAM;
+  3a:	2005      	movs	r0, #5
+  3c:	4240      	negs	r0, r0
+    return rc;
+  3e:	e7fb      	b.n	38 <tn_alloc_init+0x38>
+
+Disassembly of section .text.tn_alloc:
+
+00000000 <tn_alloc>:
+{
+   0:	b5f8      	push	{r3, r4, r5, r6, r7, lr}
+   2:	0004      	movs	r4, r0
+   4:	000e      	movs	r6, r1
+    void * ret_val = NULL;
+   6:	1e05      	subs	r5, r0, #0
+    if(mi != NULL && alloc_size > 0U)
+   8:	d016      	beq.n	38 <tn_alloc+0x38>
+    void * ret_val = NULL;
+   a:	1e0d      	subs	r5, r1, #0
+    if(mi != NULL && alloc_size > 0U)
+   c:	d014      	beq.n	38 <tn_alloc+0x38>
+        lock();
+   e:	4f0b      	ldr	r7, [pc, #44]	; (3c <tn_alloc+0x3c>)
+  10:	683b      	ldr	r3, [r7, #0]
+  12:	2b01      	cmp	r3, #1
+  14:	d104      	bne.n	20 <tn_alloc+0x20>
+  16:	2101      	movs	r1, #1
+  18:	3010      	adds	r0, #16
+  1a:	4249      	negs	r1, r1
+  1c:	f7ff fffe 	bl	0 <tn_sem_acquire>
+        ret_val = do_allocate(mi, alloc_size);
+  20:	0031      	movs	r1, r6
+  22:	0020      	movs	r0, r4
+  24:	f7ff fffe 	bl	0 <tn_alloc>
+        unlock();
+  28:	683b      	ldr	r3, [r7, #0]
+        ret_val = do_allocate(mi, alloc_size);
+  2a:	0005      	movs	r5, r0
+        unlock();
+  2c:	2b01      	cmp	r3, #1
+  2e:	d103      	bne.n	38 <tn_alloc+0x38>
+  30:	0020      	movs	r0, r4
+  32:	3010      	adds	r0, #16
+  34:	f7ff fffe 	bl	0 <tn_sem_signal>
+}
+  38:	0028      	movs	r0, r5
+  3a:	bdf8      	pop	{r3, r4, r5, r6, r7, pc}
+  3c:	00000000 	.word	0x00000000
+
+Disassembly of section .text.tn_dealloc:
+
+00000000 <tn_dealloc>:
+{
+   0:	b570      	push	{r4, r5, r6, lr}
+   2:	0004      	movs	r4, r0
+   4:	000d      	movs	r5, r1
+    if(mi != NULL && p_mem != NULL)
+   6:	2800      	cmp	r0, #0
+   8:	d018      	beq.n	3c <tn_dealloc+0x3c>
+   a:	2900      	cmp	r1, #0
+   c:	d016      	beq.n	3c <tn_dealloc+0x3c>
+        lock();
+   e:	4e0d      	ldr	r6, [pc, #52]	; (44 <tn_dealloc+0x44>)
+  10:	6833      	ldr	r3, [r6, #0]
+  12:	2b01      	cmp	r3, #1
+  14:	d104      	bne.n	20 <tn_dealloc+0x20>
+  16:	2101      	movs	r1, #1
+  18:	3010      	adds	r0, #16
+  1a:	4249      	negs	r1, r1
+  1c:	f7ff fffe 	bl	0 <tn_sem_acquire>
+        rc = do_deallocate(mi, p_mem);
+  20:	0029      	movs	r1, r5
+  22:	0020      	movs	r0, r4
+  24:	f7ff fffe 	bl	0 <tn_dealloc>
+        unlock();
+  28:	6833      	ldr	r3, [r6, #0]
+        rc = do_deallocate(mi, p_mem);
+  2a:	0005      	movs	r5, r0
+        unlock();
+  2c:	2b01      	cmp	r3, #1
+  2e:	d103      	bne.n	38 <tn_dealloc+0x38>
+  30:	0020      	movs	r0, r4
+  32:	3010      	adds	r0, #16
+  34:	f7ff fffe 	bl	0 <tn_sem_signal>
+}
+  38:	0028      	movs	r0, r5
+  3a:	bd70      	pop	{r4, r5, r6, pc}
+    int rc = TERR_WPARAM;
+  3c:	2505      	movs	r5, #5
+  3e:	426d      	negs	r5, r5
+    return rc;
+  40:	e7fa      	b.n	38 <tn_dealloc+0x38>
+  42:	46c0      	nop			; (mov r8, r8)
+  44:	00000000 	.word	0x00000000
+
+Disassembly of section .text.tn_alloc_get_free_size:
+
+00000000 <tn_alloc_get_free_size>:
+
+//----------------------------------------------------------------------------
+unsigned long tn_alloc_get_free_size(MEMINFO * mi)
+{
+   0:	b570      	push	{r4, r5, r6, lr}
+    unsigned long rc = 0UL;
+    lock();
+   2:	4e0b      	ldr	r6, [pc, #44]	; (30 <tn_alloc_get_free_size+0x30>)
+{
+   4:	0004      	movs	r4, r0
+    lock();
+   6:	6833      	ldr	r3, [r6, #0]
+   8:	2b01      	cmp	r3, #1
+   a:	d104      	bne.n	16 <tn_alloc_get_free_size+0x16>
+   c:	2101      	movs	r1, #1
+   e:	3010      	adds	r0, #16
+  10:	4249      	negs	r1, r1
+  12:	f7ff fffe 	bl	0 <tn_sem_acquire>
+    unsigned long rc = 0UL;
+  16:	1e25      	subs	r5, r4, #0
+    if(mi != NULL)
+  18:	d000      	beq.n	1c <tn_alloc_get_free_size+0x1c>
+    {
+        rc = mi->t_free;
+  1a:	6865      	ldr	r5, [r4, #4]
+    }
+    unlock();
+  1c:	6833      	ldr	r3, [r6, #0]
+  1e:	2b01      	cmp	r3, #1
+  20:	d103      	bne.n	2a <tn_alloc_get_free_size+0x2a>
+  22:	0020      	movs	r0, r4
+  24:	3010      	adds	r0, #16
+  26:	f7ff fffe 	bl	0 <tn_sem_signal>
+    return rc;
+}
+  2a:	0028      	movs	r0, r5
+  2c:	bd70      	pop	{r4, r5, r6, pc}
+  2e:	46c0      	nop			; (mov r8, r8)
+  30:	00000000 	.word	0x00000000
+
+Disassembly of section .text.tn_realloc:
+
+00000000 <tn_realloc>:
+
+*/
+
+//----------------------------------------------------------------------------
+void * tn_realloc(MEMINFO * mi, void * p_mem, unsigned long new_size)
+{
+   0:	b5f7      	push	{r0, r1, r2, r4, r5, r6, r7, lr}
+   2:	0004      	movs	r4, r0
+   4:	000f      	movs	r7, r1
+   6:	0015      	movs	r5, r2
+    void * ret_val = NULL;
+   8:	1e06      	subs	r6, r0, #0
+    if(mi != NULL && new_size > 0UL)
+   a:	d019      	beq.n	40 <tn_realloc+0x40>
+    void * ret_val = NULL;
+   c:	1e16      	subs	r6, r2, #0
+    if(mi != NULL && new_size > 0UL)
+   e:	d017      	beq.n	40 <tn_realloc+0x40>
+    {
+        lock();
+  10:	4b19      	ldr	r3, [pc, #100]	; (78 <tn_realloc+0x78>)
+  12:	681b      	ldr	r3, [r3, #0]
+  14:	2b01      	cmp	r3, #1
+  16:	d104      	bne.n	22 <tn_realloc+0x22>
+  18:	2101      	movs	r1, #1
+  1a:	3010      	adds	r0, #16
+  1c:	4249      	negs	r1, r1
+  1e:	f7ff fffe 	bl	0 <tn_sem_acquire>
+    unsigned long block_start_addr;
+    unsigned long nbytes_to_copy;
+
+    void * ret_ptr;// = NULL;
+
+    if(p_mem == NULL) // just call do_allocate()
+  22:	2f00      	cmp	r7, #0
+  24:	d10e      	bne.n	44 <tn_realloc+0x44>
+    {
+        ret_ptr = do_allocate(mi, new_size);
+  26:	0029      	movs	r1, r5
+  28:	0020      	movs	r0, r4
+  2a:	f7ff fffe 	bl	0 <tn_realloc>
+  2e:	0006      	movs	r6, r0
+        unlock();
+  30:	4b11      	ldr	r3, [pc, #68]	; (78 <tn_realloc+0x78>)
+  32:	681b      	ldr	r3, [r3, #0]
+  34:	2b01      	cmp	r3, #1
+  36:	d103      	bne.n	40 <tn_realloc+0x40>
+  38:	0020      	movs	r0, r4
+  3a:	3010      	adds	r0, #16
+  3c:	f7ff fffe 	bl	0 <tn_sem_signal>
+}
+  40:	0030      	movs	r0, r6
+  42:	bdfe      	pop	{r1, r2, r3, r4, r5, r6, r7, pc}
+
+        block_start_addr = (unsigned long)((char*)p_mem);
+        block_start_addr -= M_ALIG; // Get header
+        block =  (MEMHDR *)block_start_addr;
+
+        nbytes_to_copy = block->size - M_ALIG;
+  44:	003b      	movs	r3, r7
+  46:	3b08      	subs	r3, #8
+  48:	685b      	ldr	r3, [r3, #4]
+        nbytes_to_copy = MIN(nbytes_to_copy, new_size);
+
+        ret_ptr = do_allocate(mi, new_size);
+  4a:	0029      	movs	r1, r5
+  4c:	0020      	movs	r0, r4
+        nbytes_to_copy = block->size - M_ALIG;
+  4e:	9301      	str	r3, [sp, #4]
+        ret_ptr = do_allocate(mi, new_size);
+  50:	f7ff fffe 	bl	0 <tn_realloc>
+  54:	1e06      	subs	r6, r0, #0
+        if(ret_ptr != NULL)
+  56:	d0eb      	beq.n	30 <tn_realloc+0x30>
+        nbytes_to_copy = block->size - M_ALIG;
+  58:	9b01      	ldr	r3, [sp, #4]
+        nbytes_to_copy = MIN(nbytes_to_copy, new_size);
+  5a:	002a      	movs	r2, r5
+        nbytes_to_copy = block->size - M_ALIG;
+  5c:	3b08      	subs	r3, #8
+        nbytes_to_copy = MIN(nbytes_to_copy, new_size);
+  5e:	429d      	cmp	r5, r3
+  60:	d900      	bls.n	64 <tn_realloc+0x64>
+  62:	001a      	movs	r2, r3
+        {
+            //-- Copy old mem
+            (void)memmove(ret_ptr, p_mem, nbytes_to_copy);
+  64:	0039      	movs	r1, r7
+  66:	0030      	movs	r0, r6
+  68:	f7ff fffe 	bl	0 <memmove>
+            //-- Free old mem
+            (void)do_deallocate(mi, p_mem);
+  6c:	0039      	movs	r1, r7
+  6e:	0020      	movs	r0, r4
+  70:	f7ff fffe 	bl	0 <tn_realloc>
+  74:	e7dc      	b.n	30 <tn_realloc+0x30>
+  76:	46c0      	nop			; (mov r8, r8)
+  78:	00000000 	.word	0x00000000

@@ -1,0 +1,872 @@
+###############################################################################
+#
+# IAR ELF Linker V8.22.2.15995/W32 for ARM                21/Jun/2021  07:39:28
+# Copyright 2007-2018 IAR Systems AB.
+#
+#    Output file  =  D:\my_github\samd21_tnkernel3_usb\Debug\Exe\rtos_usb_g.out
+#    Map file     =  
+#        D:\my_github\samd21_tnkernel3_usb\Debug\List\rtos_usb_g.map
+#    Command line =  
+#        -f C:\Users\yuri\AppData\Local\Temp\EW56DF.tmp
+#        (D:\my_github\samd21_tnkernel3_usb\Debug\Obj\bsp_dma.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\bsp_hw.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\bsp_uart0.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\bsp_usb_uart.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\cdcdf_acm.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\hal_atomic.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\hal_usb_device.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\hpl_usb.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\main.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\prj_shell_func.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\shell.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\startup_samd21.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\tn.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\tn_alloc.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\tn_dqueue.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\tn_event.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\tn_mailbox.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\tn_mem.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\tn_mutex.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\tn_port_CortexM0_M7.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\tn_port_CortexM0_M7_asm.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\tn_sem.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\tn_sprintf.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\tn_sys.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\tn_task.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\tn_timer.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\tn_user.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\tn_utils.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\usb_protocol.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\usbdc.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\utils_assert.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\utils_event.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\utils_list.o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Obj\utils_ringbuffer.o -o
+#        D:\my_github\samd21_tnkernel3_usb\Debug\Exe\rtos_usb_g.out --map
+#        D:\my_github\samd21_tnkernel3_usb\Debug\List\rtos_usb_g.map --config
+#        D:\my_github\samd21_tnkernel3_usb\flash.icf --entry
+#        __iar_program_start --no_exceptions --vfe --text_out locale)
+#
+###############################################################################
+
+*******************************************************************************
+*** RUNTIME MODEL ATTRIBUTES
+***
+
+CppFlavor       = *
+__SystemLibrary = DLib
+__dlib_version  = 6
+
+
+*******************************************************************************
+*** HEAP SELECTION
+***
+
+The basic heap was selected because no calls to memory allocation
+functions were found in the application outside of system library
+functions, and there are calls to deallocation functions in the
+application.
+
+
+*******************************************************************************
+*** PLACEMENT SUMMARY
+***
+
+"A0":  place at 0x00000000 { ro section .intvec };
+"P1":  place in [from 0x00000000 to 0x0003ffff] { ro };
+"P2":  place in [from 0x20000000 to 0x20007fff] { rw };
+define block CSTACK with size = 2K, alignment = 8 { };
+define block HEAP with size = 0M, alignment = 8 { };
+"A1":  place at end of [from 0x20000000 to 0x20007fff] {
+          block CSTACK, block HEAP };
+initialize by copy { rw };
+
+  Section            Kind        Address    Size  Object
+  -------            ----        -------    ----  ------
+"A0":                                       0xb4
+  .intvec                     0x00000000    0xb4  <Block>
+    .intvec          const    0x00000000    0xb4  startup_samd21.o [1]
+                            - 0x000000b4    0xb4
+
+"P1":                                     0x63b8
+  .text              ro code  0x000000b4  0x1810  hpl_usb.o [1]
+  .text              ro code  0x000018c4    0x5c  ABImemcpy.o [4]
+  .text              ro code  0x00001920    0x50  ABImemset.o [4]
+  .text              ro code  0x00001970    0x1a  hal_atomic.o [1]
+  .rodata            const    0x0000198a     0x2  bsp_hw.o [1]
+  .text              ro code  0x0000198c   0x88c  usbdc.o [1]
+  .text              ro code  0x00002218   0x146  usb_protocol.o [1]
+  .rodata            const    0x0000235e     0x2  bsp_hw.o [1]
+  .text              ro code  0x00002360   0x5bc  hal_usb_device.o [1]
+  .text              ro code  0x0000291c    0x22  utils_list.o [1]
+  .rodata            const    0x0000293e     0x2  hpl_usb.o [1]
+  .text              ro code  0x00002940   0x646  shell.o [1]
+  .rodata            const    0x00002f86     0x2  hpl_usb.o [1]
+  .text              ro code  0x00002f88   0x3a8  tn_dqueue.o [1]
+  .text              ro code  0x00003330   0x324  tn_alloc.o [1]
+  .text              ro code  0x00003654    0x74  strcpy.o [4]
+  .text              ro code  0x000036c8    0x10  strlen.o [4]
+  .text              ro code  0x000036d8    0x56  strcasecmp.o [3]
+  .text              ro code  0x00003730   0x13c  tn_port_CortexM0_M7_asm.o [1]
+  .text              ro code  0x0000386c    0x28  memcmp.o [4]
+  .text              ro code  0x00003894    0xf0  tn_utils.o [1]
+  .text              ro code  0x00003984   0x2f8  tn_sys.o [1]
+  .text              ro code  0x00003c7c   0x1b8  tn_sem.o [1]
+  .text              ro code  0x00003e34     0xc  tolower.o [3]
+  .text              ro code  0x00003e40   0x52c  main.o [1]
+  .text              ro code  0x0000436c   0x270  bsp_hw.o [1]
+  .text              ro code  0x000045dc   0x3ec  bsp_dma.o [1]
+  .text              ro code  0x000049c8   0x1d0  tn.o [1]
+  .text              ro code  0x00004b98   0x4b0  bsp_uart0.o [1]
+  .text              ro code  0x00005048   0x2d0  bsp_usb_uart.o [1]
+  .text              ro code  0x00005318   0x1c8  tn_task.o [1]
+  .text              ro code  0x000054e0    0xe0  I32DivModFast.o [4]
+  .text              ro code  0x000055c0   0x3bc  tn_sprintf.o [1]
+  .text              ro code  0x0000597c    0xb2  tn_port_CortexM0_M7.o [1]
+  .text              ro code  0x00005a2e    0x26  tn_user.o [1]
+  .text              ro code  0x00005a54   0x400  cdcdf_acm.o [1]
+  .text              ro code  0x00005e54    0x7a  utils_ringbuffer.o [1]
+  .text              ro code  0x00005ed0     0x2  IntDivZer.o [4]
+  .text              ro code  0x00005ed4   0x1a2  prj_shell_func.o [1]
+  .text              ro code  0x00006076    0x1c  strcat.o [3]
+  Initializer bytes  const    0x00006094    0xc0  <for P2-1>
+  .text              ro code  0x00006154    0x6c  startup_samd21.o [1]
+  .text              ro code  0x000061c0     0xc  cstartup_M.o [4]
+  .text              ro code  0x000061cc    0x1e  cmain.o [4]
+  .text              ro code  0x000061ec    0x28  data_init.o [4]
+  .text              ro code  0x00006214     0x8  exit.o [3]
+  .text              ro code  0x0000621c     0xa  cexit.o [4]
+  .text              ro code  0x00006228     0xc  XXexit.o [4]
+  .rodata            const    0x00006234    0x44  prj_shell_func.o [1]
+  .text              ro code  0x00006278    0x3c  zero_init3.o [4]
+  .rodata            const    0x000062b4    0x30  prj_shell_func.o [1]
+  .text              ro code  0x000062e4    0x30  copy_init3.o [4]
+  .rodata            const    0x00006314    0x24  hpl_usb.o [1]
+  .iar.init_table    const    0x00006338    0x24  - Linker created -
+  .rodata            const    0x0000635c    0x18  main.o [1]
+  .rodata            const    0x00006374    0x18  prj_shell_func.o [1]
+  .rodata            const    0x0000638c    0x14  prj_shell_func.o [1]
+  .rodata            const    0x000063a0    0x14  prj_shell_func.o [1]
+  .rodata            const    0x000063b4    0x14  prj_shell_func.o [1]
+  .rodata            const    0x000063c8    0x14  shell.o [1]
+  .rodata            const    0x000063dc    0x10  main.o [1]
+  .rodata            const    0x000063ec    0x10  prj_shell_func.o [1]
+  .rodata            const    0x000063fc     0xc  main.o [1]
+  .rodata            const    0x00006408     0xc  prj_shell_func.o [1]
+  .rodata            const    0x00006414     0x8  prj_shell_func.o [1]
+  .rodata            const    0x0000641c     0x8  prj_shell_func.o [1]
+  .rodata            const    0x00006424     0x8  prj_shell_func.o [1]
+  .rodata            const    0x0000642c     0x8  prj_shell_func.o [1]
+  .rodata            const    0x00006434     0x8  prj_shell_func.o [1]
+  .rodata            const    0x0000643c     0x8  prj_shell_func.o [1]
+  .rodata            const    0x00006444     0x8  shell.o [1]
+  .rodata            const    0x0000644c     0x4  bsp_hw.o [1]
+  .rodata            const    0x00006450     0x4  bsp_hw.o [1]
+  .rodata            const    0x00006454     0x4  bsp_hw.o [1]
+  .rodata            const    0x00006458     0x4  bsp_hw.o [1]
+  .rodata            const    0x0000645c     0x4  hpl_usb.o [1]
+  .rodata            const    0x00006460     0x4  prj_shell_func.o [1]
+  .rodata            const    0x00006464     0x4  prj_shell_func.o [1]
+  .rodata            const    0x00006468     0x4  prj_shell_func.o [1]
+  .rodata            const    0x0000646c     0x0  zero_init3.o [4]
+  .rodata            const    0x0000646c     0x0  copy_init3.o [4]
+                            - 0x0000646c  0x63b8
+
+"P2", part 1 of 2:                          0xc0
+  P2-1                        0x20000000    0xc0  <Init block>
+    .data            inited   0x20000000    0xa4  bsp_usb_uart.o [1]
+    .data            inited   0x200000a4     0x8  bsp_usb_uart.o [1]
+    .data            inited   0x200000ac     0x8  cdcdf_acm.o [1]
+    .data            inited   0x200000b4     0x4  main.o [1]
+    .data            inited   0x200000b8     0x4  main.o [1]
+    .data            inited   0x200000bc     0x4  tn.o [1]
+                            - 0x200000c0    0xc0
+
+"P2", part 2 of 2:                        0x1c44
+  .bss               zero     0x200000c0   0x400  main.o [1]
+  .bss               zero     0x200004c0   0x300  main.o [1]
+  .bss               zero     0x200007c0   0x300  main.o [1]
+  .bss               zero     0x20000ac0   0x200  main.o [1]
+  .bss               zero     0x20000cc0   0x200  tn.o [1]
+  .bss               zero     0x20000ec0   0x1ac  main.o [1]
+  .bss               zero     0x2000106c   0x184  bsp_usb_uart.o [1]
+  .bss               zero     0x200011f0   0x180  tn.o [1]
+  .bss               zero     0x20001370   0x100  tn.o [1]
+  .bss               zero     0x20001470    0xc8  hpl_usb.o [1]
+  .bss               zero     0x20001538    0xc0  shell.o [1]
+  .bss               zero     0x200015f8    0x80  hal_usb_device.o [1]
+  .bss               zero     0x20001678    0x80  main.o [1]
+  .bss               zero     0x200016f8    0x60  hpl_usb.o [1]
+  .bss               zero     0x20001758    0x60  main.o [1]
+  .bss               zero     0x200017b8    0x60  main.o [1]
+  .bss               zero     0x20001818    0x60  main.o [1]
+  .bss               zero     0x20001878    0x60  main.o [1]
+  .bss               zero     0x200018d8    0x60  tn.o [1]
+  .bss               zero     0x20001938    0x48  main.o [1]
+  .bss               zero     0x20001980    0x40  hpl_usb.o [1]
+  .bss               zero     0x200019c0    0x40  hpl_usb.o [1]
+  .bss               zero     0x20001a00    0x40  hpl_usb.o [1]
+  .bss               zero     0x20001a40    0x40  main.o [1]
+  .bss               zero     0x20001a80    0x40  main.o [1]
+  .bss               zero     0x20001ac0    0x40  tn.o [1]
+  .bss               zero     0x20001b00    0x40  tn.o [1]
+  .bss               zero     0x20001b40    0x30  bsp_dma.o [1]
+  .bss               zero     0x20001b70    0x30  bsp_dma.o [1]
+  .bss               zero     0x20001ba0    0x30  bsp_dma.o [1]
+  .bss               zero     0x20001bd0    0x30  main.o [1]
+  .bss               zero     0x20001c00    0x24  main.o [1]
+  .bss               zero     0x20001c24    0x24  shell.o [1]
+  .bss               zero     0x20001c48    0x20  main.o [1]
+  .bss               zero     0x20001c68    0x20  usbdc.o [1]
+  .bss               zero     0x20001c88    0x14  tn.o [1]
+  .bss               zero     0x20001c9c     0xc  cdcdf_acm.o [1]
+  .bss               zero     0x20001ca8     0x8  cdcdf_acm.o [1]
+  .bss               zero     0x20001cb0     0x8  cdcdf_acm.o [1]
+  .bss               zero     0x20001cb8     0x8  tn.o [1]
+  .bss               zero     0x20001cc0     0x8  tn.o [1]
+  .bss               zero     0x20001cc8     0x8  tn.o [1]
+  .bss               zero     0x20001cd0     0x4  bsp_dma.o [1]
+  .bss               zero     0x20001cd4     0x4  bsp_dma.o [1]
+  .bss               zero     0x20001cd8     0x4  cdcdf_acm.o [1]
+  .bss               zero     0x20001cdc     0x4  cdcdf_acm.o [1]
+  .bss               zero     0x20001ce0     0x4  shell.o [1]
+  .bss               zero     0x20001ce4     0x4  tn.o [1]
+  .bss               zero     0x20001ce8     0x4  tn.o [1]
+  .bss               zero     0x20001cec     0x4  tn.o [1]
+  .bss               zero     0x20001cf0     0x4  tn.o [1]
+  .bss               zero     0x20001cf4     0x4  tn.o [1]
+  .bss               zero     0x20001cf8     0x4  tn.o [1]
+  .bss               zero     0x20001cfc     0x4  tn.o [1]
+  .bss               zero     0x20001d00     0x4  tn.o [1]
+                            - 0x20001d04  0x1c44
+
+"A1":                                      0x800
+  CSTACK                      0x20007800   0x800  <Block>
+    CSTACK           uninit   0x20007800   0x800  <Block tail>
+                            - 0x20008000   0x800
+
+
+*******************************************************************************
+*** INIT TABLE
+***
+
+          Address     Size
+          -------     ----
+Zero (__iar_zero_init3)
+    1 destination range, total size 0x1c44:
+          0x200000c0  0x1c44
+
+Copy (__iar_copy_init3)
+    1 source range, total size 0xc0:
+          0x00006094    0xc0
+    1 destination range, total size 0xc0:
+          0x20000000    0xc0
+
+
+
+*******************************************************************************
+*** MODULE SUMMARY
+***
+
+    Module                     ro code  ro data  rw data
+    ------                     -------  -------  -------
+D:\my_github\samd21_tnkernel3_usb\Debug\Obj: [1]
+    bsp_dma.o                    1 004               152
+    bsp_hw.o                       624       20
+    bsp_uart0.o                  1 200
+    bsp_usb_uart.o                 720      172      560
+    cdcdf_acm.o                  1 024        8       44
+    hal_atomic.o                    26
+    hal_usb_device.o             1 468               128
+    hpl_usb.o                    6 160       44      488
+    main.o                       1 324       60    4 336
+    prj_shell_func.o               418      288
+    shell.o                      1 606       28      232
+    startup_samd21.o               108      180
+    tn.o                           464        4    1 456
+    tn_alloc.o                     804
+    tn_dqueue.o                    936
+    tn_port_CortexM0_M7.o          178
+    tn_port_CortexM0_M7_asm.o      316
+    tn_sem.o                       440
+    tn_sprintf.o                   956
+    tn_sys.o                       760
+    tn_task.o                      456
+    tn_user.o                       38
+    tn_utils.o                     240
+    usb_protocol.o                 326
+    usbdc.o                      2 188                32
+    utils_list.o                    34
+    utils_ringbuffer.o             122
+    ----------------------------------------------------
+    Total:                      23 940      804    7 428
+
+command line: [2]
+    ----------------------------------------------------
+    Total:
+
+dl6M_tln.a: [3]
+    exit.o                           8
+    strcasecmp.o                    86
+    strcat.o                        28
+    tolower.o                       12
+    ----------------------------------------------------
+    Total:                         134
+
+rt6M_tl.a: [4]
+    ABImemcpy.o                     92
+    ABImemset.o                     80
+    I32DivModFast.o                224
+    IntDivZer.o                      2
+    XXexit.o                        12
+    cexit.o                         10
+    cmain.o                         30
+    copy_init3.o                    48
+    cstartup_M.o                    12
+    data_init.o                     40
+    memcmp.o                        40
+    strcpy.o                       116
+    strlen.o                        16
+    zero_init3.o                    60
+    ----------------------------------------------------
+    Total:                         782
+
+    Gaps                            10
+    Linker created                           38    2 048
+--------------------------------------------------------
+    Grand Total:                24 866      842    9 476
+
+
+*******************************************************************************
+*** ENTRY LIST
+***
+
+Entry                      Address   Size  Type      Object
+-----                      -------   ----  ----      ------
+.iar.init_table$$Base   0x00006338          --   Gb  - Linker created -
+.iar.init_table$$Limit  0x0000635c          --   Gb  - Linker created -
+.intvec$$Base           0x00000000          --   Gb  - Linker created -
+.intvec$$Limit          0x000000b4          --   Gb  - Linker created -
+?main                   0x000061cd         Code  Gb  cmain.o [4]
+CSTACK$$Base            0x20007800          --   Gb  - Linker created -
+CSTACK$$Limit           0x20008000          --   Gb  - Linker created -
+DMAC_Handler            0x00005a3d    0xc  Code  Gb  tn_user.o [1]
+Dummy_Handler           0x000061bd    0x4  Code  Gb  startup_samd21.o [1]
+HAL_GPIO_RX_LED_out     0x00003f07   0x16  Code  Lc  main.o [1]
+HAL_GPIO_RX_LED_set     0x00003efd    0xa  Code  Lc  main.o [1]
+HAL_GPIO_TX_LED_clr     0x00003f29    0xc  Code  Lc  main.o [1]
+HAL_GPIO_TX_LED_out     0x00003f35   0x18  Code  Lc  main.o [1]
+HAL_GPIO_TX_LED_set     0x00003f1d    0xc  Code  Lc  main.o [1]
+HAL_GPIO_UART_RX_in     0x00004bdf   0x22  Code  Lc  bsp_uart0.o [1]
+HAL_GPIO_UART_RX_pmuxen
+                        0x00004c17   0x20  Code  Lc  bsp_uart0.o [1]
+HAL_GPIO_UART_RX_pullup
+                        0x00004c01   0x16  Code  Lc  bsp_uart0.o [1]
+HAL_GPIO_UART_TX_out    0x00004ba7   0x16  Code  Lc  bsp_uart0.o [1]
+HAL_GPIO_UART_TX_pmuxen
+                        0x00004bbd   0x22  Code  Lc  bsp_uart0.o [1]
+HAL_GPIO_USB_DM_pmuxen  0x0000436d   0x22  Code  Lc  bsp_hw.o [1]
+HAL_GPIO_USB_DP_pmuxen  0x0000438f   0x20  Code  Lc  bsp_hw.o [1]
+NVIC_DisableIRQ         0x00004b99    0xe  Code  Lc  bsp_uart0.o [1]
+NVIC_EnableIRQ          0x000045dd    0xe  Code  Lc  bsp_dma.o [1]
+NVIC_EnableIRQ          0x000000b5    0xe  Code  Lc  hpl_usb.o [1]
+NVIC_SetPriority        0x000045eb   0x8c  Code  Lc  bsp_dma.o [1]
+NVIC_SetPriority        0x00003e41   0x8c  Code  Lc  main.o [1]
+OutputChar              0x00005893   0x20  Code  Lc  tn_sprintf.o [1]
+OutputField             0x000058b3   0xa0  Code  Lc  tn_sprintf.o [1]
+PendSV_Handler          0x00003773         Code  Gb  tn_port_CortexM0_M7_asm.o [1]
+Region$$Table$$Base     0x00006338          --   Gb  - Linker created -
+Region$$Table$$Limit    0x0000635c          --   Gb  - Linker created -
+Reset_Handler           0x00006163   0x40  Code  Gb  startup_samd21.o [1]
+StrPrintfFunc           0x00005953   0x2a  Code  Lc  tn_sprintf.o [1]
+SysTick_Config          0x00003ecd   0x30  Code  Lc  main.o [1]
+SysTick_Handler         0x00005a31    0xc  Code  Gb  tn_user.o [1]
+USB_Handler             0x00005a49    0xc  Code  Gb  tn_user.o [1]
+__aeabi_idiv            0x0000550d         Code  Gb  I32DivModFast.o [4]
+__aeabi_idiv0           0x00005ed1         Code  Gb  IntDivZer.o [4]
+__aeabi_idivmod         0x0000550d         Code  Gb  I32DivModFast.o [4]
+__aeabi_memcpy          0x000018c5         Code  Gb  ABImemcpy.o [4]
+__aeabi_memset          0x00001921         Code  Gb  ABImemset.o [4]
+__aeabi_uidiv           0x00005513         Code  Gb  I32DivModFast.o [4]
+__aeabi_uidivmod        0x00005513         Code  Gb  I32DivModFast.o [4]
+__cmain                 0x000061cd         Code  Gb  cmain.o [4]
+__exit                  0x00006229         Code  Gb  XXexit.o [4]
+__iar_Memset4_word      0x00001941         Code  Gb  ABImemset.o [4]
+__iar_Memset_word       0x0000192d         Code  Gb  ABImemset.o [4]
+__iar_copy_init3        0x000062e5   0x30  Code  Gb  copy_init3.o [4]
+__iar_data_init3        0x000061ed   0x28  Code  Gb  data_init.o [4]
+__iar_program_start     0x000061c1         Code  Gb  cstartup_M.o [4]
+__iar_systems$$module {Abs}
+                        0x00000001         Data  Gb  command line/config [2]
+__iar_zero_init3        0x00006279   0x3c  Code  Gb  zero_init3.o [4]
+__low_level_init        0x00006155    0xe  Code  Gb  startup_samd21.o [1]
+__vector_table          0x00000000   0xb4  Data  Gb  startup_samd21.o [1]
+_call_main              0x000061d9         Code  Gb  cmain.o [4]
+_cdcdf_acm              0x20001c9c    0xc  Data  Lc  cdcdf_acm.o [1]
+_cdcdf_acm_funcd        0x20001ca8    0x8  Data  Lc  cdcdf_acm.o [1]
+_dummy_func_no_return   0x0000025f    0x4  Code  Lc  hpl_usb.o [1]
+_exit                   0x0000621d         Code  Gb  cexit.o [4]
+_main                   0x000061e7         Code  Gb  cmain.o [4]
+_usb_d_cb_trans_done    0x00002519   0x98  Code  Lc  hal_usb_device.o [1]
+_usb_d_dev_attach       0x00001105    0xa  Code  Gb  hpl_usb.o [1]
+_usb_d_dev_enable       0x000010c7   0x3e  Code  Gb  hpl_usb.o [1]
+_usb_d_dev_ep_deinit    0x00001255   0xb6  Code  Gb  hpl_usb.o [1]
+_usb_d_dev_ep_enable    0x00001311  0x190  Code  Gb  hpl_usb.o [1]
+_usb_d_dev_ep_init      0x00001171   0xd2  Code  Gb  hpl_usb.o [1]
+_usb_d_dev_ep_read_req  0x0000168d   0x68  Code  Gb  hpl_usb.o [1]
+_usb_d_dev_ep_stall     0x00001585   0x56  Code  Gb  hpl_usb.o [1]
+_usb_d_dev_ep_stall_clr
+                        0x000014ed   0x98  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_ep_stall_get
+                        0x000014a9   0x12  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_ep_stall_set
+                        0x000014bb   0x32  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_ep_trans     0x000016f5  0x156  Code  Gb  hpl_usb.o [1]
+_usb_d_dev_ept          0x00000675   0x26  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_handle_eps   0x00000f2d   0x6a  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_handle_nep   0x000007b1   0x5c  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_handle_setup
+                        0x00000c17   0x9c  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_handle_stall
+                        0x00000cb3   0x22  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_handle_trfail
+                        0x00000ce1  0x196  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_handler      0x00000f9d   0x46  Code  Gb  hpl_usb.o [1]
+_usb_d_dev_in_next      0x00000819  0x196  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_init         0x00001047   0x80  Code  Gb  hpl_usb.o [1]
+_usb_d_dev_lpmsusp      0x000006ad   0x5a  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_out_next     0x000009c5  0x252  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_ramerr       0x00000707   0x16  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_register_callback
+                        0x00001855   0x26  Code  Gb  hpl_usb.o [1]
+_usb_d_dev_register_ep_callback
+                        0x00001881   0x34  Code  Gb  hpl_usb.o [1]
+_usb_d_dev_reset        0x00000749   0x34  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_reset_epts   0x00000ff1   0x56  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_set_address  0x0000110f   0x10  Code  Gb  hpl_usb.o [1]
+_usb_d_dev_sof          0x0000069b   0x12  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_suspend      0x0000077d   0x26  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_trans_done   0x000015db   0x2e  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_trans_in_isr
+                        0x00000ea1   0x46  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_trans_out_isr
+                        0x00000ee7   0x46  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_trans_setup  0x0000111f   0x4c  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_trans_setup_isr
+                        0x00000e7d   0x24  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_trans_stop   0x00001611   0x78  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_wait_clk_rdy
+                        0x000002f9   0x1c  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_wait_dfll_rdy
+                        0x000002d3   0x26  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_wait_dpll_rdy
+                        0x000002c3   0x10  Code  Lc  hpl_usb.o [1]
+_usb_d_dev_wakeup       0x0000071d   0x2c  Code  Lc  hpl_usb.o [1]
+_usb_d_ep_halt_clr      0x0000284d   0x58  Code  Lc  hal_usb_device.o [1]
+_usb_d_find_ep          0x00002361   0x60  Code  Lc  hal_usb_device.o [1]
+_usb_d_trans            0x000023c1   0x28  Code  Lc  hal_usb_device.o [1]
+_usb_ep0_cache          0x20001980   0x40  Data  Lc  hpl_usb.o [1]
+_usb_ep1_cache          0x200019c0   0x40  Data  Lc  hpl_usb.o [1]
+_usb_ep2_cache          0x20001a00   0x40  Data  Lc  hpl_usb.o [1]
+_usb_ep_cfgs            0x00006314   0x24  Data  Lc  hpl_usb.o [1]
+_usb_load_calib         0x00000263   0x60  Code  Lc  hpl_usb.o [1]
+_usbd_ep_ack_io_cpt     0x00000475   0x10  Code  Lc  hpl_usb.o [1]
+_usbd_ep_ack_setup      0x00000437    0xc  Code  Lc  hpl_usb.o [1]
+_usbd_ep_ack_stall      0x000003db   0x10  Code  Lc  hpl_usb.o [1]
+_usbd_ep_clear_bank_status
+                        0x0000059d   0x18  Code  Lc  hpl_usb.o [1]
+_usbd_ep_int_ack        0x00000315   0x12  Code  Lc  hpl_usb.o [1]
+_usbd_ep_int_dis        0x00000339   0x12  Code  Lc  hpl_usb.o [1]
+_usbd_ep_int_en         0x00000327   0x12  Code  Lc  hpl_usb.o [1]
+_usbd_ep_int_stall_en   0x000003eb   0x22  Code  Lc  hpl_usb.o [1]
+_usbd_ep_is_ctrl        0x0000034b   0x1a  Code  Lc  hpl_usb.o [1]
+_usbd_ep_is_setup       0x0000041b   0x1c  Code  Lc  hpl_usb.o [1]
+_usbd_ep_is_stall_sent  0x000003b9   0x22  Code  Lc  hpl_usb.o [1]
+_usbd_ep_is_stalled     0x00000395   0x22  Code  Lc  hpl_usb.o [1]
+_usbd_ep_pcksize_size   0x00000615   0x60  Code  Lc  hpl_usb.o [1]
+_usbd_ep_set_buf        0x00000485   0x1a  Code  Lc  hpl_usb.o [1]
+_usbd_ep_set_in_count   0x0000049f   0x2a  Code  Lc  hpl_usb.o [1]
+_usbd_ep_set_in_rdy     0x000005b5   0x2c  Code  Lc  hpl_usb.o [1]
+_usbd_ep_set_in_size    0x000004c9   0x28  Code  Lc  hpl_usb.o [1]
+_usbd_ep_set_in_trans   0x0000054d   0x28  Code  Lc  hpl_usb.o [1]
+_usbd_ep_set_out_count  0x000004f1   0x28  Code  Lc  hpl_usb.o [1]
+_usbd_ep_set_out_rdy    0x000005e9   0x2c  Code  Lc  hpl_usb.o [1]
+_usbd_ep_set_out_size   0x00000519   0x2a  Code  Lc  hpl_usb.o [1]
+_usbd_ep_set_out_trans  0x00000575   0x28  Code  Lc  hpl_usb.o [1]
+_usbd_ep_set_stall      0x00000365   0x2c  Code  Lc  hpl_usb.o [1]
+_usbd_ep_set_toggle     0x00000443   0x2c  Code  Lc  hpl_usb.o [1]
+_usbd_ep_stop_setup     0x0000040d    0xe  Code  Lc  hpl_usb.o [1]
+_write_back_section     0x20001b40   0x30  Data  Lc  bsp_dma.o [1]
+atomic_enter_critical   0x00001971    0xe  Code  Gb  hal_atomic.o [1]
+atomic_leave_critical   0x0000197f    0xc  Code  Gb  hal_atomic.o [1]
+bsp_dma_dummy_init      0x00004749   0x80  Code  Gb  bsp_dma.o [1]
+bsp_dma_dummy_start     0x000047c9   0x38  Code  Gb  bsp_dma.o [1]
+bsp_dma_init            0x00004677   0x4e  Code  Gb  bsp_dma.o [1]
+bsp_dma_interrupt_handler
+                        0x00004919   0x7a  Code  Gb  bsp_dma.o [1]
+bsp_dma_uart0_get_btcnt
+                        0x000048dd    0x6  Code  Gb  bsp_dma.o [1]
+bsp_dma_uart0_rx_init   0x000046c5   0x84  Code  Gb  bsp_dma.o [1]
+bsp_dma_uart0_tx_ch_disable
+                        0x000048a1   0x38  Code  Gb  bsp_dma.o [1]
+bsp_dma_uart0_tx_init   0x00004805   0x96  Code  Gb  bsp_dma.o [1]
+bsp_uart0_hw_init       0x00004efd  0x11a  Code  Lc  bsp_uart0.o [1]
+bsp_uart0_open          0x00004c37   0xc0  Code  Gb  bsp_uart0.o [1]
+bsp_uart0_transmit      0x00004d05   0x56  Code  Gb  bsp_uart0.o [1]
+cdcdf_acm_ctrl          0x00005c01   0x2c  Code  Lc  cdcdf_acm.o [1]
+cdcdf_acm_disable       0x00005b7d   0x84  Code  Lc  cdcdf_acm.o [1]
+cdcdf_acm_enable        0x00005a73  0x10a  Code  Lc  cdcdf_acm.o [1]
+cdcdf_acm_get_req       0x00005cd3   0x40  Code  Lc  cdcdf_acm.o [1]
+cdcdf_acm_init          0x00005d73   0x2e  Code  Gb  cdcdf_acm.o [1]
+cdcdf_acm_is_enabled    0x00005e31    0x6  Code  Gb  cdcdf_acm.o [1]
+cdcdf_acm_notify_state  0x20001cd8    0x4  Data  Lc  cdcdf_acm.o [1]
+cdcdf_acm_read          0x00005da1   0x24  Code  Gb  cdcdf_acm.o [1]
+cdcdf_acm_register_callback
+                        0x00005de9   0x42  Code  Gb  cdcdf_acm.o [1]
+cdcdf_acm_req           0x00005d13   0x60  Code  Lc  cdcdf_acm.o [1]
+cdcdf_acm_req_h         0x200000ac    0x8  Data  Lc  cdcdf_acm.o [1]
+cdcdf_acm_set_line_coding
+                        0x20001cdc    0x4  Data  Lc  cdcdf_acm.o [1]
+cdcdf_acm_set_req       0x00005c2d   0xa6  Code  Lc  cdcdf_acm.o [1]
+cdcdf_acm_write         0x00005dc5   0x24  Code  Gb  cdcdf_acm.o [1]
+clock_init              0x000043af   0xe6  Code  Gb  bsp_hw.o [1]
+delete_task_resources   0x00003b49    0x2  Code  Gb  tn_sys.o [1]
+descriptor_section      0x20001b70   0x30  Data  Lc  bsp_dma.o [1]
+dev_inst                0x20001470   0xc8  Data  Lc  hpl_usb.o [1]
+dma_eventHandler        0x00004cf7    0xe  Code  Lc  bsp_uart0.o [1]
+dmacChannelObj          0x20001ba0   0x30  Data  Lc  bsp_dma.o [1]
+do_allocate             0x000035d1   0x80  Code  Lc  tn_alloc.o [1]
+do_deallocate           0x00003407  0x1ca  Code  Lc  tn_alloc.o [1]
+do_delay                0x00003841         Code  Gb  tn_port_CortexM0_M7_asm.o [1]
+do_input_sem            0x000032b9   0x36  Code  Gb  tn_dqueue.o [1]
+do_itoa                 0x00006011   0x66  Code  Gb  prj_shell_func.o [1]
+do_output_sem           0x000032ef   0x42  Code  Gb  tn_dqueue.o [1]
+do_sem_acquire          0x00003e0b   0x2a  Code  Gb  tn_sem.o [1]
+do_sem_signal           0x00003dc1   0x4a  Code  Gb  tn_sem.o [1]
+dque_fifo_read          0x00002f57   0x30  Code  Lc  shell.o [1]
+dque_fifo_write         0x00002f1b   0x3c  Code  Lc  shell.o [1]
+exit                    0x00006215    0x8  Code  Gb  exit.o [3]
+ffs_asm                 0x00003821         Code  Gb  tn_port_CortexM0_M7_asm.o [1]
+fill_line_buf           0x00004299   0x94  Code  Gb  main.o [1]
+find_next_task_to_run   0x000039b1   0x32  Code  Gb  tn_sys.o [1]
+g_ascii_drv             0x20001c00   0x24  Data  Gb  main.o [1]
+g_dummy_dst_arr         0x20001cd4    0x4  Data  Lc  bsp_dma.o [1]
+g_dummy_src_arr         0x20001cd0    0x4  Data  Lc  bsp_dma.o [1]
+g_line_buf              0x20001678   0x80  Data  Gb  main.o [1]
+g_p_shell_ds            0x200000b4    0x4  Data  Lc  main.o [1]
+g_shell_cmd_arr         0x000062b4   0x30  Data  Gb  prj_shell_func.o [1]
+g_shell_cmd_arr_size    0x00006468    0x4  Data  Gb  prj_shell_func.o [1]
+g_shell_ds              0x20000ec0  0x1ac  Data  Lc  main.o [1]
+g_shell_hs_mi           0x20001c24   0x24  Data  Lc  shell.o [1]
+g_shell_hs_mi_buf       0x20001538   0xc0  Data  Lc  shell.o [1]
+g_single_desc           0x200000a4    0x8  Data  Lc  bsp_usb_uart.o [1]
+g_uart0_info            0x20001938   0x48  Data  Lc  main.o [1]
+g_uart0_rx_buf          0x20001c48   0x20  Data  Gb  main.o [1]
+g_uart0_tx_buf          0x20001a80   0x40  Data  Gb  main.o [1]
+g_usb_cdc_uart_info     0x2000106c  0x184  Data  Lc  bsp_usb_uart.o [1]
+get_sll_data_addr       0x00002f99    0x4  Code  Lc  tn_dqueue.o [1]
+get_task_by_create_queue
+                        0x00005ed5   0x10  Code  Lc  prj_shell_func.o [1]
+get_task_by_timer_queue
+                        0x00003995   0x10  Code  Lc  tn_sys.o [1]
+get_task_by_tsk_queue   0x00002f89   0x10  Code  Lc  tn_dqueue.o [1]
+get_task_by_tsk_queue   0x00003c7d   0x10  Code  Lc  tn_sem.o [1]
+get_task_by_tsk_queue   0x00003985   0x10  Code  Lc  tn_sys.o [1]
+get_task_by_tsk_queue   0x00003895   0x10  Code  Lc  tn_utils.o [1]
+get_uart0_info          0x00003f4d    0x4  Code  Gb  main.o [1]
+get_usb_cdc_uart_info   0x00005049    0x4  Code  Gb  bsp_usb_uart.o [1]
+hri_sysctrl_get_DPLLSTATUS_reg
+                        0x000000cb    0xc  Code  Lc  hpl_usb.o [1]
+hri_sysctrl_get_PCLKSR_reg
+                        0x000000c3    0x8  Code  Lc  hpl_usb.o [1]
+hri_usbdevice_clear_CTRLB_DETACH_bit
+                        0x00000161    0xa  Code  Lc  hpl_usb.o [1]
+hri_usbdevice_clear_INTEN_reg
+                        0x000000f1    0x4  Code  Lc  hpl_usb.o [1]
+hri_usbdevice_clear_INTFLAG_reg
+                        0x000000e5    0x4  Code  Lc  hpl_usb.o [1]
+hri_usbdevice_get_CTRLA_ENABLE_bit
+                        0x00000115   0x2a  Code  Lc  hpl_usb.o [1]
+hri_usbdevice_get_SYNCBUSY_reg
+                        0x000000f5    0xa  Code  Lc  hpl_usb.o [1]
+hri_usbdevice_read_CTRLA_reg
+                        0x00000151   0x10  Code  Lc  hpl_usb.o [1]
+hri_usbdevice_read_INTEN_reg
+                        0x000000ed    0x4  Code  Lc  hpl_usb.o [1]
+hri_usbdevice_read_INTFLAG_reg
+                        0x000000e1    0x4  Code  Lc  hpl_usb.o [1]
+hri_usbdevice_set_CTRLA_SWRST_bit
+                        0x000000ff   0x16  Code  Lc  hpl_usb.o [1]
+hri_usbdevice_set_INTEN_reg
+                        0x000000e9    0x4  Code  Lc  hpl_usb.o [1]
+hri_usbdevice_wait_for_sync
+                        0x000000d7    0xa  Code  Lc  hpl_usb.o [1]
+hri_usbdevice_write_CTRLA_reg
+                        0x0000013f   0x12  Code  Lc  hpl_usb.o [1]
+hri_usbdevice_write_CTRLB_reg
+                        0x0000016b    0x4  Code  Lc  hpl_usb.o [1]
+hri_usbdevice_write_DADD_reg
+                        0x0000016f    0x4  Code  Lc  hpl_usb.o [1]
+hri_usbdevice_write_DESCADD_reg
+                        0x00000173    0x4  Code  Lc  hpl_usb.o [1]
+hri_usbendpoint_clear_EPINTEN_RXSTP_bit
+                        0x000001dd   0x12  Code  Lc  hpl_usb.o [1]
+hri_usbendpoint_clear_EPINTEN_reg
+                        0x000001ff   0x10  Code  Lc  hpl_usb.o [1]
+hri_usbendpoint_clear_EPINTFLAG_reg
+                        0x0000019d   0x10  Code  Lc  hpl_usb.o [1]
+hri_usbendpoint_clear_EPSTATUS_reg
+                        0x000001cd   0x10  Code  Lc  hpl_usb.o [1]
+hri_usbendpoint_get_EPINTFLAG_reg
+                        0x00000177   0x16  Code  Lc  hpl_usb.o [1]
+hri_usbendpoint_read_EPCFG_EPTYPE0_bf
+                        0x0000020f   0x16  Code  Lc  hpl_usb.o [1]
+hri_usbendpoint_read_EPCFG_EPTYPE1_bf
+                        0x00000225   0x1a  Code  Lc  hpl_usb.o [1]
+hri_usbendpoint_read_EPCFG_reg
+                        0x0000024f   0x10  Code  Lc  hpl_usb.o [1]
+hri_usbendpoint_read_EPINTFLAG_reg
+                        0x0000018d   0x10  Code  Lc  hpl_usb.o [1]
+hri_usbendpoint_read_EPSTATUS_reg
+                        0x000001bd   0x10  Code  Lc  hpl_usb.o [1]
+hri_usbendpoint_set_EPINTEN_reg
+                        0x000001ef   0x10  Code  Lc  hpl_usb.o [1]
+hri_usbendpoint_set_EPSTATUS_reg
+                        0x000001ad   0x10  Code  Lc  hpl_usb.o [1]
+hri_usbendpoint_write_EPCFG_reg
+                        0x0000023f   0x10  Code  Lc  hpl_usb.o [1]
+is_queue_empty          0x000038ad   0x16  Code  Gb  tn_utils.o [1]
+list_insert_at_end      0x0000291d   0x22  Code  Gb  utils_list.o [1]
+main                    0x00003f51   0x62  Code  Gb  main.o [1]
+memcmp                  0x0000386d   0x28  Code  Gb  memcmp.o [4]
+os_tick_list_index      0x000039a5    0xc  Code  Lc  tn_sys.o [1]
+prvt_inst               0x200016f8   0x60  Data  Lc  hpl_usb.o [1]
+queueShellEvents        0x20001bd0   0x30  Data  Gb  main.o [1]
+queueShellEventsMem     0x20001a40   0x40  Data  Lc  main.o [1]
+queue_add_tail          0x00003901    0xe  Code  Gb  tn_utils.o [1]
+queue_insert_by_priority
+                        0x000038c3   0x3e  Code  Gb  tn_utils.o [1]
+queue_remove_entry      0x0000392b    0xe  Code  Gb  tn_utils.o [1]
+queue_remove_head       0x0000390f   0x1c  Code  Gb  tn_utils.o [1]
+queue_reset             0x000038a5    0x8  Code  Gb  tn_utils.o [1]
+random_xor32            0x00004235   0x36  Code  Gb  main.o [1]
+random_xor32::seed      0x200000b8    0x4  Data  Lc  main.o [1]
+ringbuffer_get          0x00005e77   0x26  Code  Gb  utils_ringbuffer.o [1]
+ringbuffer_init         0x00005e55   0x22  Code  Gb  utils_ringbuffer.o [1]
+ringbuffer_num          0x00005ec7    0x8  Code  Gb  utils_ringbuffer.o [1]
+ringbuffer_put          0x00005e9d   0x2a  Code  Gb  utils_ringbuffer.o [1]
+sh_cmd_end              0x00002c21   0x18  Code  Gb  shell.o [1]
+sh_do_cmd_exec          0x00002b09   0x7a  Code  Gb  shell.o [1]
+sh_echo                 0x00002be5   0x1e  Code  Gb  shell.o [1]
+sh_exec_cmd_1           0x00005efd    0xc  Code  Gb  prj_shell_func.o [1]
+sh_exec_cmd_2           0x00005f09    0xc  Code  Gb  prj_shell_func.o [1]
+sh_exec_cmd_3           0x00005f15    0xc  Code  Gb  prj_shell_func.o [1]
+sh_exec_cmd_psw         0x00005ee5    0xc  Code  Gb  prj_shell_func.o [1]
+sh_exec_cmd_ver         0x00005ef1    0xc  Code  Gb  prj_shell_func.o [1]
+sh_exec_dump_stk        0x00005f21   0xba  Code  Gb  prj_shell_func.o [1]
+sh_get_command_line_args
+                        0x00002c39   0x76  Code  Gb  shell.o [1]
+sh_init                 0x0000294b   0x78  Code  Gb  shell.o [1]
+sh_input                0x000029c3  0x136  Code  Gb  shell.o [1]
+sh_input::stage         0x20001ce0    0x4  Data  Lc  shell.o [1]
+sh_prompt               0x00002b9b   0x26  Code  Gb  shell.o [1]
+sh_putchar              0x00002c03   0x1e  Code  Gb  shell.o [1]
+sh_send                 0x00002b83   0x18  Code  Gb  shell.o [1]
+sh_start_cmd_exec       0x00002af9   0x10  Code  Gb  shell.o [1]
+sh_stop_cmd_exec        0x00002bdd    0x8  Code  Gb  shell.o [1]
+shell_hist_init         0x00002caf   0x12  Code  Lc  shell.o [1]
+shell_hs_add_line       0x00002d21   0xbc  Code  Lc  shell.o [1]
+shell_hs_free_memory    0x00002cd5   0x32  Code  Lc  shell.o [1]
+shell_hs_get_line       0x00002ddd   0x6e  Code  Lc  shell.o [1]
+shell_hs_get_memory     0x00002cc1   0x14  Code  Lc  shell.o [1]
+shell_is_line_already_in_history
+                        0x00002e4b   0x3c  Code  Lc  shell.o [1]
+shell_send_hs_line      0x00002e87   0x94  Code  Lc  shell.o [1]
+simple_ascii_rx_drv     0x000041e9   0x4c  Code  Gb  main.o [1]
+single_desc_bytes       0x20000000   0xa4  Data  Lc  bsp_usb_uart.o [1]
+sll_add_head            0x00003973   0x12  Code  Gb  tn_utils.o [1]
+sll_add_tail            0x00003957   0x1c  Code  Gb  tn_utils.o [1]
+sll_init                0x00003939    0xa  Code  Gb  tn_utils.o [1]
+sll_remove_head         0x00003943   0x14  Code  Gb  tn_utils.o [1]
+strcasecmp              0x000036d9   0x56  Code  Gb  strcasecmp.o [3]
+strcat                  0x00006077   0x1c  Code  Gb  strcat.o [3]
+strcpy                  0x00003655         Code  Gb  strcpy.o [4]
+strlen                  0x000036c9   0x10  Code  Gb  strlen.o [4]
+task_curr_to_wait_action
+                        0x00003aa7   0x64  Code  Gb  tn_sys.o [1]
+task_io                 0x20001878   0x60  Data  Lc  main.o [1]
+task_io_func            0x00004185   0x3a  Code  Gb  main.o [1]
+task_io_stack           0x200007c0  0x300  Data  Lc  main.o [1]
+task_main               0x20001818   0x60  Data  Lc  main.o [1]
+task_main_func          0x0000414d   0x2a  Code  Gb  main.o [1]
+task_main_stack         0x200000c0  0x400  Data  Lc  main.o [1]
+task_set_dormant_state  0x00003b15   0x34  Code  Gb  tn_sys.o [1]
+task_to_non_runnable    0x000039e3   0x4e  Code  Gb  tn_sys.o [1]
+task_to_runnable        0x00003a31   0x42  Code  Gb  tn_sys.o [1]
+task_uart0_rx           0x200017b8   0x60  Data  Lc  main.o [1]
+task_uart0_rx_func      0x000040bd   0x7e  Code  Gb  main.o [1]
+task_uart0_rx_stack     0x200004c0  0x300  Data  Lc  main.o [1]
+task_wait_complete      0x00003a73   0x34  Code  Gb  tn_sys.o [1]
+tn_alloc                0x00003381   0x42  Code  Gb  tn_alloc.o [1]
+tn_alloc_init           0x00003331   0x50  Code  Gb  tn_alloc.o [1]
+tn_app_init             0x00003fb3   0xca  Code  Gb  main.o [1]
+tn_arm_disable_interrupts
+                        0x00003829         Code  Gb  tn_port_CortexM0_M7_asm.o [1]
+tn_arm_enable_interrupts
+                        0x0000382d         Code  Gb  tn_port_CortexM0_M7_asm.o [1]
+tn_chk_irq_disabled     0x0000381b         Code  Gb  tn_port_CortexM0_M7_asm.o [1]
+tn_cpu_int_enable       0x00005a2f    0x2  Code  Gb  tn_user.o [1]
+tn_cpu_restore_sr       0x00003815         Code  Gb  tn_port_CortexM0_M7_asm.o [1]
+tn_cpu_save_sr          0x0000380d         Code  Gb  tn_port_CortexM0_M7_asm.o [1]
+tn_create_queue         0x20001cb8    0x8  Data  Gb  tn.o [1]
+tn_created_tasks_qty    0x20001ce4    0x4  Data  Gb  tn.o [1]
+tn_curr_run_task        0x20001cf0    0x4  Data  Gb  tn.o [1]
+tn_dealloc              0x000033c3   0x44  Code  Gb  tn_alloc.o [1]
+tn_dqueue_create        0x00002f9d   0xaa  Code  Gb  tn_dqueue.o [1]
+tn_dqueue_receive       0x00003047  0x126  Code  Gb  tn_dqueue.o [1]
+tn_dqueue_send          0x00002941    0xa  Code  Lc  shell.o [1]
+tn_dqueue_send_ex       0x0000316d  0x144  Code  Gb  tn_dqueue.o [1]
+tn_func_exit_stack      0x20000cc0  0x200  Data  Gb  tn.o [1]
+tn_func_exit_stack_start
+                        0x200000bc    0x4  Data  Gb  tn.o [1]
+tn_func_to_ul_1         0x00003823         Code  Gb  tn_port_CortexM0_M7_asm.o [1]
+tn_func_to_ul_2         0x00003825         Code  Gb  tn_port_CortexM0_M7_asm.o [1]
+tn_idle_count           0x20001cfc    0x4  Data  Gb  tn.o [1]
+tn_idle_task            0x200018d8   0x60  Data  Gb  tn.o [1]
+tn_idle_task_func       0x00004a9d   0x16  Code  Gb  tn.o [1]
+tn_idle_task_hook_func  0x20001d00    0x4  Data  Gb  tn.o [1]
+tn_idle_task_stack      0x200011f0  0x180  Data  Lc  tn.o [1]
+tn_inside_int           0x00003831         Code  Gb  tn_port_CortexM0_M7_asm.o [1]
+tn_int_exit             0x00003805         Code  Gb  tn_port_CortexM0_M7_asm.o [1]
+tn_int_stack_init       0x00005a2d    0x2  Code  Gb  tn_port_CortexM0_M7.o [1]
+tn_next_task_to_run     0x20001cec    0x4  Data  Gb  tn.o [1]
+tn_os_tick_task         0x20001758   0x60  Data  Lc  main.o [1]
+tn_os_tick_task_func    0x00004081   0x2e  Code  Gb  main.o [1]
+tn_os_tick_task_stack   0x20000ac0  0x200  Data  Lc  main.o [1]
+tn_os_timer_cancel      0x00003c55   0x28  Code  Gb  tn_sys.o [1]
+tn_os_timer_list_gen    0x20001cc8    0x8  Data  Gb  tn.o [1]
+tn_os_timer_list_tick   0x20001b00   0x40  Data  Gb  tn.o [1]
+tn_os_timer_start       0x00003bf1   0x52  Code  Gb  tn_sys.o [1]
+tn_os_timers_tick_proc  0x00003b4b   0xa0  Code  Gb  tn_sys.o [1]
+tn_ready_list           0x20001370  0x100  Data  Gb  tn.o [1]
+tn_ready_to_run_bmp     0x20001cf8    0x4  Data  Gb  tn.o [1]
+tn_sem_acquire          0x00003d33   0x86  Code  Gb  tn_sem.o [1]
+tn_sem_create           0x00003c8d   0x42  Code  Gb  tn_sem.o [1]
+tn_sem_signal           0x00003ccf   0x64  Code  Gb  tn_sem.o [1]
+tn_snprintf             0x000055c1   0x10  Code  Gb  tn_sprintf.o [1]
+tn_sp_info              0x20001cc0    0x8  Data  Gb  tn.o [1]
+tn_stack_init           0x0000597d   0x7c  Code  Gb  tn_port_CortexM0_M7.o [1]
+tn_start_exe            0x00003731         Code  Gb  tn_port_CortexM0_M7_asm.o [1]
+tn_start_system         0x000049c9   0xd4  Code  Gb  tn.o [1]
+tn_switch_context       0x000037fd         Code  Gb  tn_port_CortexM0_M7_asm.o [1]
+tn_sys_tick_count       0x20001cf4    0x4  Data  Gb  tn.o [1]
+tn_sys_tick_sem         0x20001c88   0x14  Data  Gb  tn.o [1]
+tn_system_state         0x20001ce8    0x4  Data  Gb  tn.o [1]
+tn_task_create          0x00005319  0x104  Code  Gb  tn_task.o [1]
+tn_task_exit            0x0000541d   0x5c  Code  Gb  tn_task.o [1]
+tn_task_exit_asm        0x000037bf         Code  Gb  tn_port_CortexM0_M7_asm.o [1]
+tn_task_sleep           0x0000548d   0x4a  Code  Gb  tn_task.o [1]
+tn_tick_int_processing  0x00004ab3   0x9e  Code  Gb  tn.o [1]
+tn_tslice_ticks         0x20001ac0   0x40  Data  Gb  tn.o [1]
+tn_void_to_ul           0x00003827         Code  Gb  tn_port_CortexM0_M7_asm.o [1]
+tolower                 0x00003e35    0xc  Code  Gb  tolower.o [3]
+uart0_read              0x00004e37   0xc6  Code  Gb  bsp_uart0.o [1]
+uart0_tx_buf            0x00004da1   0x68  Code  Gb  bsp_uart0.o [1]
+uart0_tx_char           0x00004e09   0x2e  Code  Gb  bsp_uart0.o [1]
+uart0_tx_str            0x00004d8d   0x14  Code  Gb  bsp_uart0.o [1]
+uart_usb_read           0x00005191   0xe0  Code  Gb  bsp_usb_uart.o [1]
+uart_usb_tx_buf         0x00005271   0x8c  Code  Gb  bsp_usb_uart.o [1]
+uart_usb_tx_str         0x000052fd   0x1c  Code  Gb  bsp_usb_uart.o [1]
+usb_cfg_desc_next       0x00002245    0xe  Code  Lc  usb_protocol.o [1]
+usb_cfg_desc_total_len  0x0000223b    0xa  Code  Lc  usb_protocol.o [1]
+usb_cfg_desc_total_len  0x000019ab    0xa  Code  Lc  usbdc.o [1]
+usb_d_attach            0x00002647    0x8  Code  Gb  hal_usb_device.o [1]
+usb_d_cb_trans_more     0x00002473   0x2e  Code  Lc  hal_usb_device.o [1]
+usb_d_cb_trans_setup    0x000023ed   0x86  Code  Lc  hal_usb_device.o [1]
+usb_d_ctrl_trans_done   0x000024a1   0x78  Code  Lc  hal_usb_device.o [1]
+usb_d_dummy_cb_false    0x000023e9    0x4  Code  Lc  hal_usb_device.o [1]
+usb_d_enable            0x0000263f    0x8  Code  Gb  hal_usb_device.o [1]
+usb_d_ep0_init          0x00002659   0x12  Code  Gb  hal_usb_device.o [1]
+usb_d_ep_deinit         0x000026d1   0x2c  Code  Gb  hal_usb_device.o [1]
+usb_d_ep_enable         0x000026fd   0x44  Code  Gb  hal_usb_device.o [1]
+usb_d_ep_halt           0x000028a5   0x2c  Code  Gb  hal_usb_device.o [1]
+usb_d_ep_init           0x0000266b   0x66  Code  Gb  hal_usb_device.o [1]
+usb_d_ep_register_callback
+                        0x000028d1   0x42  Code  Gb  hal_usb_device.o [1]
+usb_d_ep_transfer       0x00002741   0xf4  Code  Gb  hal_usb_device.o [1]
+usb_d_init              0x000025b1   0x80  Code  Gb  hal_usb_device.o [1]
+usb_d_inst              0x200015f8   0x80  Data  Lc  hal_usb_device.o [1]
+usb_d_register_callback
+                        0x00002635    0xa  Code  Gb  hal_usb_device.o [1]
+usb_d_set_address       0x0000264f    0xa  Code  Gb  hal_usb_device.o [1]
+usb_desc_len            0x00005a61    0x4  Code  Lc  cdcdf_acm.o [1]
+usb_desc_len            0x00002225    0x4  Code  Lc  usb_protocol.o [1]
+usb_desc_len            0x00001999    0x4  Code  Lc  usbdc.o [1]
+usb_desc_next           0x00005a65    0xe  Code  Lc  cdcdf_acm.o [1]
+usb_desc_next           0x0000222d    0xe  Code  Lc  usb_protocol.o [1]
+usb_desc_next           0x0000199d    0xe  Code  Lc  usbdc.o [1]
+usb_desc_type           0x00002229    0x4  Code  Lc  usb_protocol.o [1]
+usb_device_cb_rx        0x0000508b   0x36  Code  Lc  bsp_usb_uart.o [1]
+usb_device_cb_state_changed
+                        0x0000504d   0x3e  Code  Lc  bsp_usb_uart.o [1]
+usb_device_cb_tx        0x000050c1   0x14  Code  Lc  bsp_usb_uart.o [1]
+usb_find_cfg_desc       0x000022cb   0x4a  Code  Gb  usb_protocol.o [1]
+usb_find_desc           0x00002253   0x3a  Code  Gb  usb_protocol.o [1]
+usb_find_ep_desc        0x0000228d   0x3e  Code  Gb  usb_protocol.o [1]
+usb_find_str_desc       0x00002315   0x4a  Code  Gb  usb_protocol.o [1]
+usb_get_u16             0x00005a55    0xc  Code  Lc  cdcdf_acm.o [1]
+usb_get_u16             0x00002219    0xc  Code  Lc  usb_protocol.o [1]
+usb_get_u16             0x0000198d    0xc  Code  Lc  usbdc.o [1]
+usb_hw_init             0x00004495   0xc4  Code  Gb  bsp_hw.o [1]
+usb_serial_init         0x000050d5   0x7c  Code  Gb  bsp_usb_uart.o [1]
+usb_uart_active_proc    0x00005151   0x2c  Code  Gb  bsp_usb_uart.o [1]
+usbd_cdc_line_coding    0x20001cb0    0x8  Data  Lc  cdcdf_acm.o [1]
+usbd_event_cb           0x00002103   0x1e  Code  Lc  usbdc.o [1]
+usbd_sof_cb             0x00001fb1    0x8  Code  Lc  usbdc.o [1]
+usbdc                   0x20001c68   0x20  Data  Lc  usbdc.o [1]
+usbdc_attach            0x000021d1    0x8  Code  Gb  usbdc.o [1]
+usbdc_cb_ctl_done       0x0000209f   0x22  Code  Lc  usbdc.o [1]
+usbdc_cb_ctl_req        0x00001fb9   0x56  Code  Lc  usbdc.o [1]
+usbdc_change_notify     0x00001f47   0x24  Code  Lc  usbdc.o [1]
+usbdc_clear_ftr_req     0x00001c65   0x4a  Code  Lc  usbdc.o [1]
+usbdc_ctrl_data_end     0x0000208f   0x10  Code  Lc  usbdc.o [1]
+usbdc_ctrl_status_end   0x0000200f   0x80  Code  Lc  usbdc.o [1]
+usbdc_get_cfg_desc      0x00001a09   0x86  Code  Lc  usbdc.o [1]
+usbdc_get_ctrl_buffer   0x000021d9    0x6  Code  Gb  usbdc.o [1]
+usbdc_get_desc_req      0x00001b05   0x3c  Code  Lc  usbdc.o [1]
+usbdc_get_dev_desc      0x000019b5   0x54  Code  Lc  usbdc.o [1]
+usbdc_get_interface     0x00001bab   0x68  Code  Lc  usbdc.o [1]
+usbdc_get_req           0x00001c13   0x4e  Code  Lc  usbdc.o [1]
+usbdc_get_state         0x000021df   0x14  Code  Gb  usbdc.o [1]
+usbdc_get_status_req    0x00001b41   0x6a  Code  Lc  usbdc.o [1]
+usbdc_get_str_desc      0x00001a8f   0x76  Code  Lc  usbdc.o [1]
+usbdc_init              0x00002161   0x30  Code  Gb  usbdc.o [1]
+usbdc_register_function
+                        0x00002191    0xc  Code  Gb  usbdc.o [1]
+usbdc_register_handler  0x00002137   0x2a  Code  Gb  usbdc.o [1]
+usbdc_request_handler   0x00001f6b   0x42  Code  Lc  usbdc.o [1]
+usbdc_reset             0x000020c1   0x42  Code  Gb  usbdc.o [1]
+usbdc_set_address       0x00001dad    0xa  Code  Lc  usbdc.o [1]
+usbdc_set_config        0x00001d13   0x9a  Code  Lc  usbdc.o [1]
+usbdc_set_ftr_req       0x00001caf   0x4a  Code  Lc  usbdc.o [1]
+usbdc_set_interface     0x00001db7   0xd2  Code  Lc  usbdc.o [1]
+usbdc_set_req           0x00001e89   0xa4  Code  Lc  usbdc.o [1]
+usbdc_sof_notify        0x00001f2d   0x1a  Code  Lc  usbdc.o [1]
+usbdc_start             0x0000219d   0x34  Code  Gb  usbdc.o [1]
+usbdc_unconfig          0x00001cf9   0x1a  Code  Lc  usbdc.o [1]
+usbdc_xfer              0x00002121   0x16  Code  Gb  usbdc.o [1]
+vStrPrintf              0x000055d1   0x12  Code  Gb  tn_sprintf.o [1]
+vStrXPrintf             0x000055e9  0x2aa  Code  Lc  tn_sprintf.o [1]
+
+
+[1] = D:\my_github\samd21_tnkernel3_usb\Debug\Obj
+[2] = command line
+[3] = dl6M_tln.a
+[4] = rt6M_tl.a
+
+  24 866 bytes of readonly  code memory
+     842 bytes of readonly  data memory
+   9 476 bytes of readwrite data memory
+
+Errors: none
+Warnings: none
